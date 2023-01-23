@@ -1,4 +1,8 @@
-@extends('layout.layout')
+@section('meta_description','Bali Cofffee Club meta description home')
+@section('meta_keywords','Bali Cofffee Club meta keyword home')
+@extends('layout.main')
+@section('page_title', 'Home')
+
 @section('content')
 
 <header class="relative flex items-center justify-center h-screen overflow-hidden">

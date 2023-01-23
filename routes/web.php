@@ -14,5 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Static.welcome');
 });
+Route::get('/about-us', function () {
+    return view('Static.about');
+});
+
+Route::get('/login', function () {
+    return view('Auth.login');
+});
+Route::get('/register', function () {
+    return view('Auth.register');
+});
+
+Route::get('/dashboard', function () {
+    return view('Admin.index');
+});
+
