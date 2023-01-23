@@ -29,14 +29,15 @@
 
 <main class="z-40 bg-black">
 
+    <!--  -->
     <section class="py-20 px-5"
-        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://balicoffeeclub.com/wp-content/uploads/2022/05/Uluwatu-scaled.jpg');">
+        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://balicoffeeclub.com/wp-content/uploads/2022/05/Uluwatu-scaled.jpg');">
         <div class="grid md:grid-cols-2 container mx-auto place-items-center">
             <div class="text-white">
                 <h5 class="text-[4vw] md:text-[1vw] ">ABOUT BCC COFFEE</h5>
                 <h2 class="pt-10 font-bold text-[6vw] md:text-[2vw]">The Story Behind Bali, the Coffee, and the Club
                 </h2>
-                <p class="py-5 text-justify md:text-left">Bali is home to a rich culture and holds a myriad of ways to
+                <p class="mt-5 text-justify md:text-left">Bali is home to a rich culture and holds a myriad of ways to
                     celebrate it. At Bali
                     Coffee Club, we
                     celebrate the culture surrounding coffee, which permeates through the many islands of Indonesia.
@@ -45,14 +46,12 @@
                     direct to
                     you.</p>
                 <a href="#">
-                    <button class="bg-white p-3 rounded-md text-[#ff5700]">Know More</button>
+                    <button class="mt-5 md:mt-10 bg-white p-3 rounded-md text-[#ff5700]">Know More</button>
                 </a>
             </div>
             <div class="md:grid grid-cols-4">
-                <div class="col-start-2 col-span-3">
-                    <img src="{{ asset('img/image-23-1.png')}}"
-                        class="pt-10 md:pt-0  object-cover mx-auto md:rounded-[32px]" alt="Murals" />
-                </div>
+                <img src="{{ asset('img/image-23-1.png')}}"
+                    class="pt-10 md:pt-0  object-cover mx-auto md:rounded-[32px] col-start-2 col-span-3" alt="Murals" />
             </div>
         </div>
         <div class="grid grid-cols-12 text-white">
@@ -78,6 +77,57 @@
             </div>
         </div>
     </section>
+
+    <!--  -->
+    <section class="py-20 px-5 bg-fixed bg-center"
+        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://balicoffeeclub.com/wp-content/uploads/2022/04/temple-gates-lempuyang-luhur-temple-bali-indonesia-1.jpg');">
+        <h1 class="text-4xl text-center font-bold text-white">Our Popular Coffee</h1>
+        <div class="mt-20 grid grid-cols-3">
+            <img src="{{ asset ('img/orange-black-1.jpg')}}" class="h-[30vw] mx-auto" alt="">
+            <img src="{{ asset ('img/Tumbler-Mug-2-1.png')}}" class="h-[30vw] mx-auto" alt="">
+            <img src="{{ asset ('img/orange-black-2.jpg')}}" class="h-[30vw] mx-auto" alt="">
+        </div>
+    </section>
+
+    <!--  -->
+    <section class="p-5 py-32 bg-white">
+        <div class="grid md:grid-cols-2 place-items-center">
+            <div class="">
+                <h2 class="text-4xl font-bold">Superior taste from “the island of the gods”</h2>
+                <p class="mt-10">Indonesia has long been considered a prime location for growing coffee. The mountainous
+                    regions of
+                    the
+                    tropics are ideal for raising superb quality beans. Here in Bali, we have two great mountains, both
+                    active volcanoes, that rumble with energy from deep within the earth and are surrounded by fertile
+                    black
+                    volanic soil which is perfect for growing wonderful coffee with a superior taste.</p>
+                <a href="#">
+                    <button class="mt-5 md:mt-10 bg-white p-3 rounded-md text-[#ff5700] border-2 border-[#ff5700]">Know
+                        More</button>
+                </a>
+            </div>
+            <div class="mt-10 md:grid grid-cols-4">
+                <img src="{{ asset ('img/Rectangle-18.jpg')}}" class="md:h-[20vw] mx-auto col-start-2 col-span-3"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR NEWS -->
+    <section class="p-5 py-32 bg-white">
+        <h3>OUR NEWS</h3>
+        <h2 class="font-bold">Coffeepedia</h2>
+
+    </section>
+
+    <!-- OUR RECOMMENDATIONS -->
+    <!-- <section class="py-20 px-5"
+        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://balicoffeeclub.com/wp-content/uploads/2022/05/balinesse-dancer.jpg');">
+        <h1 class="text-4xl text-center font-bold text-white">Our Recommendations</h1>
+        <div class="grid grid-cols-4">
+
+        </div>
+    </section> -->
 
     <!-- <section class="pt-32 grid md:grid-cols-12">
         <div class="bg-gray-100 md:col-span-5 md:hidden">
