@@ -23,6 +23,15 @@ Route::get('/about-us', function () {
 Route::get('/bakery', function () {
     return view('Static.bakery');
 });
+Route::get('/eatery', function () {
+    return view('Static.eatery');
+});
+Route::get('/coffee', function () {
+    return view('Static.coffee');
+});
+Route::get('/coffeepedia', function () {
+    return view('Static.coffeepedia');
+});
 
 // Administrator Pages Route
 Route::get('/login', function () {
