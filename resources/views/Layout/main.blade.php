@@ -17,9 +17,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <style>
-        * {
-            font-family: "montserrat", sans-serif !important;
-        }
+    * {
+        font-family: "montserrat", sans-serif !important;
+    }
     </style>
 
 </head>
@@ -27,12 +27,20 @@
 <body class="font-montserrat">
 
     @livewire('navbar')
+    @livewire('footer')
     @yield('content')
     @livewireScripts
+
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+    AOS.init();
     </script>
+    <!-- FOOTER SPACER -->
+    <div class="py-36"></div>
+    <!-- <div class="grid grid-cols-12" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0)">
+        <div class="py-36 col-start-12"
+            style="background-image:  linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));"></div>
+    </div> -->
 </body>
 
 </html>
