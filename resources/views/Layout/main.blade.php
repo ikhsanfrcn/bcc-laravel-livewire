@@ -26,10 +26,9 @@
 
 <body class="font-montserrat">
 
-    @livewire('navbar')
     @yield('content')
-    @livewire('footer')
     @livewireScripts
+    @include('Components.calltoaction')
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
         AOS.init();

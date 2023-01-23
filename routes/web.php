@@ -13,13 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Static Pages
 Route::get('/', function () {
     return view('Static.welcome');
 });
 Route::get('/about-us', function () {
     return view('Static.about');
 });
+Route::get('/bakery', function () {
+    return view('Static.bakery');
+});
 
+// Administrator Pages Route
 Route::get('/login', function () {
     return view('Auth.login');
 });
@@ -30,4 +35,3 @@ Route::get('/register', function () {
 Route::get('/dashboard', function () {
     return view('Admin.index');
 });
-
