@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livewire</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bali Coffee Club - @yield('page_title')</title>
     @vite('resources/css/app.css')
-    @livewireStyles
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +15,10 @@
         font-family:"montserrat", sans-serif !important;
     }
 </style>
-
 </head>
-
-<body class="font-montserrat">
-
-    @livewire('navbar')
-    @yield('content')
-    @livewire('footer')
-    @livewireScripts
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
+<body>
+    <main class="bg-gray-200 flex h-screen justify-center items-center">
+        @yield('page_content')
+    </main>
 </body>
-
 </html>
