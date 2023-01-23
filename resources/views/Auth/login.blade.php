@@ -12,7 +12,7 @@
             <form action="" class="mt-4 space-y-4">
                 <input type="text" name="login_username" placeholder="Username" id="" class="w-full px-2 py-2 bg-neutral-50">
                 <input type="password" name="login_password" placeholder="Password" id="" class="w-full px-2 py-2 bg-neutral-50">
-                <button type="submit" class="bg-blue-400 w-full px-2 py-2 rounded-md text-white font-bold hover:scale-90 transition ease-in-out duration-300">Login</button>
+                <button type="submit" class="bg-blue-400 w-full px-2 py-2 rounded-md text-white font-bold hover:bg-white hover:text-blue-400 transition ease-in-out duration-300">Login</button>
                 <a href="" class="block w-full text-center p-2 text-sm text-neutral-400 hover:text-neutral-800 transition ease-in-out duration-300">Forgot Password?</a>
                 <div class="block w-full text-center text-sm text-neutral-400">
                     Don't have an account? <a href="/register" class="hover:text-neutral-800 transition ease-in-out duration-300">Register here</a>
