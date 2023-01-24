@@ -1,16 +1,17 @@
-<footer class="hidden -z-10 pt-12 fixed bottom-0 w-full bg-white md:block">
+<!-- DESKTOP -->
+<footer class="hidden -z-10 pt-12 fixed bottom-0 h-screen w-full bg-white md:block">
     <div class="grid grid-cols-6 container mx-20">
-        <div class="grid col-span-2 grid-rows-2">
+        <div class="grid col-span-2">
             <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20 ml-2 mb-4" alt="">
+                <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20 ml-2" alt="">
             </a>
         </div>
     </div>
     <!--  -->
-    <div class="grid grid-cols-5 gap-x-[1vw] container mx-auto px-[2vw]">
-        <div>
+    <div class="pt-20 grid grid-cols-5 gap-x-[1vw] container mx-auto px-[2vw]">
+        <div class="col-span-2">
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">About Bali Coffe Club</h5>
-            <p class="py-2 text-[0.8vw] font-light">We prize quality above all else. The coffee plant is an incredible
+            <p class="py-2 text-[0.8vw] font-light w-full md:w-3/4 text-justify">We prize quality above all else. The coffee plant is an incredible
                 asset to our
                 world, and the
                 conditions for growing coffee are unique and special. We are dedicated to being good stewards of
@@ -59,14 +60,14 @@
                     alt="Shopeefood" />
             </div>
         </div>
-        <div class="grid grid-rows-4 gap-2">
+        <div class="grid grid-rows-4 gap-1">
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Online Order BCC Sunset</h5>
             <img src="{{ asset('img/footer/Gofood-logo.png') }}" class="w-[10vw] object-cover" alt="Gofood" />
         </div>
     </div>
     <!--  -->
     <hr class=" w-full h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700">
-    <p class="text-center py-5 text-[1.2vw]">© 2020 Your Company, Inc. All rights reserved.</p>
+    <p class="text-center py-5 text-[1.2vw]">© 2020 BVR Group Asia, Inc. All rights reserved.</p>
 </footer>
 
 <!-- MOBILE -->

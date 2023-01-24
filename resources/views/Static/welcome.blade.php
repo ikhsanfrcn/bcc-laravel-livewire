@@ -15,7 +15,7 @@
                 way to start
                 any day.
                 Bring the energy of Bali into your morning with every cup of Bali Coffee Clubs.</p>
-            <img src="{{ asset('img/output-onlinepngtools.png') }}" class="pt-10 h-24 md:h-32 mx-auto"
+            <img src="{{ asset('img/home/output-onlinepngtools.png') }}" class="pt-10 h-24 md:h-32 mx-auto"
                 alt="We Know Coffee" />
         </div>
     </div>
@@ -50,7 +50,7 @@
                 </a>
             </div>
             <div class="md:grid grid-cols-4">
-                <img src="{{ asset('img/image-23-1.png') }}"
+                <img src="{{ asset('img/home/image-23-1.png') }}"
                     class="pt-10 md:pt-0  object-cover mx-auto md:rounded-[32px] col-start-2 col-span-3" alt="Murals" />
             </div>
         </div>
@@ -59,20 +59,20 @@
                 <h2 class="py-12 font-bold text-[6vw] md:text-[2vw]">Authentical Product</h2>
                 <div class="grid lg:grid-cols-3 gap-y-10 lg:gap-y-0">
                     <div class="grid grid-cols-2 place-items-center">
-                        <img src="{{ asset('img/authen-icon-1.png') }}" class="object-cover h-24 md:h-28"
+                        <img src="{{ asset('img/home/authen-icon-1.png') }}" class="object-cover h-24 md:h-28"
                             alt="Authen" />
                         <p class="">We source coffee from local Indonesian farmers who practice responsible
                             growing
                             techniques.</p>
                     </div>
                     <div class="grid grid-cols-2 place-items-center">
-                        <img src="{{ asset('img/authen-icon-2.png') }}" class="object-cover h-24 md:h-28"
+                        <img src="{{ asset('img/home/authen-icon-2.png') }}" class="object-cover h-24 md:h-28"
                             alt="Authen" />
                         <p class="">We roast our coffee in our world-class roastery nestled in the heart of Bali.
                         </p>
                     </div>
                     <div class="grid grid-cols-2 place-items-center">
-                        <img src="{{ asset('img/authen-icon-3.png') }}" class="object-cover h-24 md:h-28"
+                        <img src="{{ asset('img/home/authen-icon-3.png') }}" class="object-cover h-24 md:h-28"
                             alt="Authen" />
                         <p class="">Our finished product is packaged and shared out to our club members, locally
                             and
@@ -89,9 +89,9 @@
         style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://balicoffeeclub.com/wp-content/uploads/2022/04/temple-gates-lempuyang-luhur-temple-bali-indonesia-1.jpg');">
         <h1 class="text-4xl text-center font-bold text-white">Our Popular Coffee</h1>
         <div class="mt-20 grid grid-cols-3">
-            <img src="{{ asset('img/orange-black-1.jpg') }}" class="h-[30vw] mx-auto" alt="">
-            <img src="{{ asset('img/Tumbler-Mug-2-1.png') }}" class="h-[30vw] mx-auto" alt="">
-            <img src="{{ asset('img/orange-black-2.jpg') }}" class="h-[30vw] mx-auto" alt="">
+            <img src="{{ asset('img/home/orange-black-1.jpg') }}" class="h-[30vw] mx-auto" alt="">
+            <img src="{{ asset('img/home/Tumbler-Mug-2-1.png') }}" class="h-[30vw] mx-auto" alt="">
+            <img src="{{ asset('img/home/orange-black-2.jpg') }}" class="h-[30vw] mx-auto" alt="">
         </div>
     </section>
 
@@ -114,7 +114,7 @@
                 </a>
             </div>
             <div class="mt-10 md:grid grid-cols-4">
-                <img src="{{ asset('img/Rectangle-18.jpg') }}" class="md:h-[20vw] mx-auto col-start-2 col-span-3"
+                <img src="{{ asset('img/home/Rectangle-18.jpg') }}" class="md:h-[20vw] mx-auto col-start-2 col-span-3"
                     alt="">
             </div>
         </div>
