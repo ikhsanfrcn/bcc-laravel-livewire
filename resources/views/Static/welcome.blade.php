@@ -27,7 +27,7 @@
     </video>
 </header>
 
-<main class="z-40 bg-black">
+<main class="z-40 bg-white">
 
     <!--  -->
     <section class="py-20 px-5"
@@ -96,8 +96,8 @@
     </section>
 
     <!--  -->
-    <section class="p-5 py-32 bg-white">
-        <div class="grid md:grid-cols-2 place-items-center">
+    <section class="p-5 md:py-32 bg-white">
+        <div class="grid md:grid-cols-2 place-items-center container mx-auto">
             <div class="">
                 <h2 class="text-4xl font-bold">Superior taste from “the island of the gods”</h2>
                 <p class="mt-10">Indonesia has long been considered a prime location for growing coffee. The
@@ -121,10 +121,31 @@
     </section>
 
     <!-- OUR NEWS -->
-    <section class="p-5 py-32 bg-white">
-        <h3>OUR NEWS</h3>
-        <h2 class="font-bold">Coffeepedia</h2>
+    <section class="p-5 md:py-32 bg-white">
+        <div class="text-center">
+        <h3 class="text-[4vw] lg:text-[2vw]">OUR NEWS</h3>
+        <h2 class="font-bold text-[6vw] lg:text-[3vw]">Coffeepedia</h2>
+        </div>
+        <div class="pt-10 grid md:grid-cols-3 container mx-auto gap-x-20">
 
+            @include('static.coffeepedia.news1')
+
+            @include('static.coffeepedia.news2')
+
+            @include('static.coffeepedia.news3')
+
+        </div>
+    </section>
+
+    <!-- <section> -->
+        @include('components.ctayt')
+    <!-- </section> -->
+
+    <!-- INSTAGRAM -->
+    <section class="grid md:grid-cols-3">
+    <a href=""><img src="{{ asset('img/instagram/Chillhouse-Breakfast-2.png') }}" class="w-screen mx-auto" alt=""></a>
+    <a href=""><img src="{{ asset('img/instagram/Chillhouse-Breakfast-1.png') }}" class="w-screen mx-auto" alt=""></a>
+    <a href=""><img src="{{ asset('img/instagram/Chillhouse-Breakfast.png') }}" class="w-screen mx-auto" alt=""></a>
     </section>
 
     <!-- OUR RECOMMENDATIONS -->

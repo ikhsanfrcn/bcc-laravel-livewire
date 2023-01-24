@@ -26,17 +26,18 @@
 
 <body class="font-montserrat">
 
-    @livewire('navbar')
-    @livewire('footer')
-    @yield('content')
     @livewireScripts
+    @livewire('navbar')
+    @yield('content')
+    @livewire('footer')
 
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
     AOS.init();
     </script>
     <!-- FOOTER SPACER -->
-    <div class="py-36"></div>
+    <div class="my-[400px] md:my-[760px]">
+    </div>
     <!-- <div class="grid grid-cols-12" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0)">
         <div class="py-36 col-start-12"
             style="background-image:  linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));"></div>
