@@ -41,6 +41,9 @@ Route::get('/register', function () {
     return view('Auth.register');
 });
 
-Route::get('/dashboard', function () {
+Route::get('/admin/dashboard', function () {
     return view('Admin.index');
+});
+Route::get('/admin/blogpost', function () {
+    return view('Admin.blogpost');
 });
