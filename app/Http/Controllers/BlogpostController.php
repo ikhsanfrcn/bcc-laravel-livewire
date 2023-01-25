@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\BlogpostModel as Blogpost;
 
 class BlogpostController extends Controller
 {
@@ -14,7 +16,9 @@ class BlogpostController extends Controller
      */
     public function index()
     {
-        //
+        //Display All data from Database
+        $blogpost = DB::table('post')->get();
+        return view('Admin.blogpost', ['blogpost' => $blogpost]);
     }
 
     /**
@@ -35,7 +39,16 @@ class BlogpostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Store Record to the Table
+        $request->validate([
+            'post_title' => 'required',
+            'post_meta_keyword' => 'required',
+            'post_meta_description' => 'required',
+            'post_image',
+            'post_content' => 'required',
+        ]);
+        Blogpost::create($request->all());
+        return redirect()->route('blogpost.index')->with('success', 'Blogpost Added Successfully!');
     }
 
     /**
