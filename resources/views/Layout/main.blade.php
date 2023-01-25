@@ -36,7 +36,7 @@
     AOS.init();
     </script>
     <!-- FOOTER SPACER -->
-    <div class="my-[400px] md:my-[760px]">
+    <div class="my-[450px] md:my-[760px]">
     </div>
     <!-- <div class="grid grid-cols-12" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0)">
         <div class="py-36 col-start-12"

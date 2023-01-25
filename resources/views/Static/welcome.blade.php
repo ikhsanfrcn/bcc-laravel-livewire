@@ -5,7 +5,7 @@
 
 @section('content')
 
-<header class="relative flex items-center justify-center h-screen overflow-hidden">
+<header class="relative flex items-center justify-center h-screen overflow-hidden bg-black">
     <div class="relative z-30 grid md:grid-cols-6 text-white text-center">
         <div class="pt-20 md:pt-40 px-2 md:px-0 col-start-2 col-span-4">
             <img src="{{ asset('img/we-know-coffee-white-1.png') }}" class="h-5 md:h-10 mx-auto" alt="We Know Coffee" />
@@ -27,7 +27,7 @@
     </video>
 </header>
 
-<main class="z-40 bg-white">
+<main class="z-40 bg-white drop-shadow-xl">
 
     <!--  -->
     <section class="py-20 px-5"

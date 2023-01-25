@@ -32,6 +32,9 @@ Route::get('/coffee', function () {
 Route::get('/coffeepedia', function () {
     return view('Static.coffeepedia');
 });
+Route::get('/contact', function () {
+    return view('Static.contact');
+});
 
 // Administrator Pages Route
 Route::get('/login', function () {
