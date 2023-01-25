@@ -19,7 +19,9 @@
             font-family: 'Montserrat', sans-serif !important;
         }
     </style>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/6l7fp7dzfs6n7ria7v22e68z1frwo2500uwixn1rrdsdy6f9/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
 </head>
 
 <body>
@@ -28,6 +30,14 @@
     <main>
         @yield('page_content')
     </main>
+    <script>
+        tinymce.init({
+            selector: 'textarea#blogpostContent',
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+
+        });
+    </script>
 
 </body>
 
