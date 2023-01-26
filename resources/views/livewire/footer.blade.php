@@ -1,9 +1,9 @@
 <!-- DESKTOP -->
 <footer class="hidden -z-10 pt-12 fixed bottom-0 h-screen w-full bg-white md:block">
     <div class="grid grid-cols-6 container mx-20">
-        <div class="grid col-span-2">
+        <div class="grid col-span-2 h-20">
             <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20 ml-2" alt="">
+                <!-- <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20 ml-2" alt=""> -->
             </a>
         </div>
     </div>
@@ -11,7 +11,8 @@
     <div class="pt-20 grid grid-cols-5 gap-x-[1vw] container mx-auto px-[2vw]">
         <div class="col-span-2">
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">About Bali Coffe Club</h5>
-            <p class="py-2 text-[0.8vw] font-light w-full md:w-3/4 text-justify">We prize quality above all else. The coffee plant is an incredible
+            <p class="py-2 text-[0.8vw] font-light w-full md:w-3/4 text-justify">We prize quality above all else. The
+                coffee plant is an incredible
                 asset to our
                 world, and the
                 conditions for growing coffee are unique and special. We are dedicated to being good stewards of
@@ -64,19 +65,31 @@
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Online Order BCC Sunset</h5>
             <img src="{{ asset('img/footer/Gofood-logo.png') }}" class="w-[10vw] object-cover" alt="Gofood" />
         </div>
+        <div class="grid grid-rows-6">
+            <div class="row-start-5 grid grid-cols-8 place-items-center">
+                <img src="{{ asset('img/footer/Bank_Mandiri_logo_white_bg-1.png') }}"
+                    class="w-[10vw] object-cover col-span-2" alt="Mandiri" />
+                <img src="{{ asset('img/footer/2-100x100.png') }}" class="w-[10vw] object-cover" alt="Shopee" />
+                <img src="{{ asset('img/footer/3-100x100.png') }}" class="w-[10vw] object-cover" alt="OVO" />
+                <img src="{{ asset('img/footer/4-100x100.png') }}" class="w-[10vw] object-cover" alt="LinkAja" />
+                <img src="{{ asset('img/footer/5-100x100.png') }}" class="w-[10vw] object-cover" alt="QRIS" />
+                <img src="{{ asset('img/footer/6-100x100.png') }}" class="w-[10vw] object-cover" alt="VISA" />
+                <img src="{{ asset('img/footer/7-100x100.png') }}" class="w-[10vw] object-cover" alt="Mastercard" />
+            </div>
+        </div>
     </div>
     <!--  -->
     <hr class=" w-full h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700">
-    <p class="text-center py-5 text-[1.2vw]">© 2020 BVR Group Asia, Inc. All rights reserved.</p>
+    <p class="text-center py-5 text-[1.2vw]">© 2022 BVR Group Asia, Inc. All rights reserved.</p>
 </footer>
 
 <!-- MOBILE -->
 <footer class="block -z-10 pt-12 fixed bottom-0 w-full bg-white md:hidden">
     <div class="grid grid-cols-12 container">
         <div class="grid col-span-7 col-start-2 grid-rows-2">
-        <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-10" alt="BCC">
-        </a>
+            <a href="/">
+                <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-10" alt="BCC">
+            </a>
         </div>
     </div>
     <!--  -->
@@ -131,11 +144,22 @@
                 <input type="email" name="" id="" placeholder="Enter your email"
                     class="bg-neutral-200 w-full p-[1.5vw]">
                 <div class="grid grid-cols-3">
-                    <button
-                        class="col-start-3 bg-[#ff5700] p-[1.5vw] text-white text-[1.5vw]">Submit</button>
+                    <button class="col-start-3 bg-[#ff5700] p-[1.5vw] text-white text-[1.5vw]">Submit</button>
                 </div>
             </div>
         </div>
+        <div class="col-start-2 col-span-2">
+        <div class="row-start-5 grid grid-cols-8 place-items-center">
+                <img src="{{ asset('img/footer/Bank_Mandiri_logo_white_bg-1.png') }}"
+                    class="w-[10vw] object-cover col-span-2" alt="Mandiri" />
+                <img src="{{ asset('img/footer/2-100x100.png') }}" class="w-[10vw] object-cover" alt="Shopee" />
+                <img src="{{ asset('img/footer/3-100x100.png') }}" class="w-[10vw] object-cover" alt="OVO" />
+                <img src="{{ asset('img/footer/4-100x100.png') }}" class="w-[10vw] object-cover" alt="LinkAja" />
+                <img src="{{ asset('img/footer/5-100x100.png') }}" class="w-[10vw] object-cover" alt="QRIS" />
+                <img src="{{ asset('img/footer/6-100x100.png') }}" class="w-[10vw] object-cover" alt="VISA" />
+                <img src="{{ asset('img/footer/7-100x100.png') }}" class="w-[10vw] object-cover" alt="Mastercard" />
+            </div>
+            </div>
         <!--  -->
 
     </div>

@@ -3,7 +3,7 @@
         class="z-30 fixed flex flex-wrap items-center justify-between w-[90%] left-[5%] py-4 px-4 text-lg text-gray-700 bg-transparent ease-in-out duration-500 rounded-md">
         <div class="flex items-center mr-6">
             <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-whitefont-1.png')}}" class="h-20" alt="">
+                <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20" alt="">
             </a>
         </div>
     </div>
@@ -16,10 +16,10 @@
         <div class="mt-12 grid grid-cols-8 py-20">
             <div class="grid grid-rows-4 gap-y-5 text-black col-start-2 col-span-3 text-3xl">
                 <a class="p-4 py-2 block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="#">ABOUT US</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="#">COFFEEPEDIA</a>
-                <!-- <a class="p-4 py-2 block hover:text-red-400" href="#">LINK 4</a> -->
-                <a class="p-4 py-2 block hover:text-red-400" href="#">MEMBERSHIP</a>
+                <a class="p-4 py-2 block hover:text-red-400" href="about-us">ABOUT US</a>
+                <a class="p-4 py-2 block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
+                <a class="p-4 py-2 block hover:text-red-400" href="contact">CONTACT</a>
+                <a class="p-4 py-2 block hover:text-red-400" href="membership">MEMBERSHIP</a>
             </div>
             <div class="col-start-6 col-span-2 grid grid-rows-3 gap-y-5">
                 <div class="">
@@ -73,10 +73,10 @@
         <div class="mt-12 grid grid-cols-8 py-10">
             <div class="grid grid-rows-4 text-black col-span-3 text-[7vw]">
                 <a class="p-4 py-2 block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="#">ABOUT US</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="#">COFFEEPEDIA</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="#">CONTACT</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="#">MEMBERSHIP</a>
+                <a class="p-4 py-2 block hover:text-red-400" href="about-us">ABOUT US</a>
+                <a class="p-4 py-2 block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
+                <a class="p-4 py-2 block hover:text-red-400" href="contact">CONTACT</a>
+                <a class="p-4 py-2 block hover:text-red-400" href="membership">MEMBERSHIP</a>
             </div>
         </div>
         <!-- <div class="grid grid-cols-12">
