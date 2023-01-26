@@ -7,7 +7,7 @@
         <a href="/admin/dashboard" class="{{ (request()->is('admin/dashboard')) ? 'text-black' : 'text-neutral-500' }} hover:text-black transition ease-in-out duration-300">Dashboard</a>
         <a href="{{route('blogpost.index')}}" class="{{ (request()->is('blogpost.index')) ? 'text-black' : 'text-neutral-500' }} hover:text-black transition ease-in-out duration-300">Blogpost</a>
         <a href="/admin/user" class="{{ (request()->is('admin/user')) ? 'text-black' : 'text-neutral-500' }} hover:text-black transition ease-in-out duration-300">User Management</a>
-        <a href="/admin/subscribers" class="{{ (request()->is('admin/subscribers')) ? 'text-black' : 'text-neutral-500' }} hover:text-black transition ease-in-out duration-300">Subscribers</a>
+        <a href="/admin/subscriber" class="{{ (request()->is('admin/subscriber')) ? 'text-black' : 'text-neutral-500' }} hover:text-black transition ease-in-out duration-300">Subscribers</a>
     </div>
     <div class="col-span-2 text-sm">
         <span class="block -mb-2 font-bold">

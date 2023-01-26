@@ -17,8 +17,8 @@ class UserSeeder extends Seeder
     public function run()
     {
         $user = [
-            ['name'=>'Administrator','email'=>'administrator@mail.com','password'=>Hash::make('Adminsitrator'),'role_id'=>'1'],
-            ['name'=>'Subscriber','email'=>'subscriber@mail.com','password'=>Hash::make('Subscriber'),'role_id'=>'2'],
+            ['user_id'=>\Ramsey\Uuid\Uuid::uuid4()->toString(),'name'=>'Administrator','email'=>'administrator@mail.com','password'=>Hash::make('Adminsitrator'),'role_id'=>'1'],
+            ['user_id'=>\Ramsey\Uuid\Uuid::uuid4()->toString(),'name'=>'Subscriber','email'=>'subscriber@mail.com','password'=>Hash::make('Subscriber'),'role_id'=>'2'],
         ];
         DB::table('users')->insert($user);
 

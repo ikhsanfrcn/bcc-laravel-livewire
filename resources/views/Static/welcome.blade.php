@@ -184,3 +184,8 @@
             style="background-image:  linear-gradient(to bottom, rgba(243, 244, 246, 1), rgba(0, 0, 0, 0));"></div>
     </div> -->
 @endsection
+
+@section('script')
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+@endsection

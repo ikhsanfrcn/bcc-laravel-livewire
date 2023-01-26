@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\BlogpostController;
+use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,8 +51,9 @@ Route::get('/register', function () {
     return view('Auth.register');
 });
 
-Route::get('/admin/dashboard', function () {
-    return view('Admin.index');
+Route::prefix('admin')->group(function () {
+    Route::resource('/dashboard', AdminController::class);
+    Route::resource('/blogpost', BlogpostController::class);
+    Route::resource('/user', UserController::class);
+    Route::resource('/subscriber', SubscriberController::class);
 });
-
-Route::resource('blogpost',BlogpostController::class);

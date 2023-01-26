@@ -55,7 +55,7 @@
                     <h3 class="text-dark pb-2 text-xl font-bold sm:text-2xl">
                         Create a New Blogpost
                     </h3>
-                    <form action="{{ route('blogpost.store') }}" method="POST" class="my-5 grid grid-cols-12 gap-5">
+                    <form action="{{ route('blogpost.store') }}" method="POST" class="my-5 grid grid-cols-12 gap-5" enctype="multipart/form-data">
                         @csrf
                         <div class="col-span-4">
                             <label for="" class=" text-neutral-800">Blogpost Title</label>
@@ -79,6 +79,8 @@
                         </div>
                         <div class="col-span-4">
                             <label for="" class=" text-neutral-800">Blogpost Image</label>
+                            <input type="text" name='post_image'
+                                class="w-full bg-gray-50 focus:bg-white px-2 py-2 rounded-md mb-4">
                             <label for="file"
                                 class="flex min-h-[175px] w-full cursor-pointer items-center justify-center rounded-md border border-dashed border-primary p-6">
                                 <div>

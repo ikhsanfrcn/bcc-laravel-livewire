@@ -42,6 +42,7 @@
         <div class="py-36 col-start-12"
             style="background-image:  linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));"></div>
     </div> -->
+    @yield('script')
 </body>
 
 </html>
