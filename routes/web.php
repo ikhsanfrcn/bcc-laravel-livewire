@@ -36,6 +36,9 @@ Route::get('/coffeepedia', function () {
 Route::get('/contact', function () {
     return view('Static.contact');
 });
+Route::get('/membership', function () {
+    return view('Static.membership');
+});
 
 // Administrator Pages Route
 Route::get('/login', function () {

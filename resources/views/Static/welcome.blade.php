@@ -27,7 +27,7 @@
     </video>
 </header>
 
-<main class="z-40 bg-white drop-shadow-xl">
+<main class="z-40 bg-white drop-shadow-2xl">
 
     <!--  -->
     <section class="py-20 px-5"
@@ -142,7 +142,7 @@
     <!-- </section> -->
 
     <!-- INSTAGRAM -->
-    <section class="pt-5 grid md:grid-cols-3">
+    <section class="grid md:grid-cols-3">
     <a href=""><img src="{{ asset('img/instagram/Chillhouse-Breakfast-2.png') }}" class="w-screen mx-auto" alt=""></a>
     <a href=""><img src="{{ asset('img/instagram/Chillhouse-Breakfast-1.png') }}" class="w-screen mx-auto" alt=""></a>
     <a href=""><img src="{{ asset('img/instagram/Chillhouse-Breakfast.png') }}" class="w-screen mx-auto" alt=""></a>
