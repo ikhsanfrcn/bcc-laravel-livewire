@@ -2,16 +2,18 @@
     class="z-30 fixed flex flex-wrap items-center justify-between w-[90%] left-[5%] py-4 px-4 text-lg text-gray-700 bg-transparent ease-in-out duration-500 rounded-md">
     <div class="flex items-center mr-6">
         <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20" alt="">
+            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20" alt="">
         </a>
     </div>
 </div>
 <nav class="hidden md:block">
     <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white"
         id="menu">
+        <div class="grid grid-cols-5">
         <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20 ml-4" alt="">
+            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-4" alt="">
         </a>
+        </div>
         <div class="mt-12 grid grid-cols-8 py-16">
             <div class="grid gap-y-5 text-black col-start-2 col-span-3 text-3xl">
                 <a class="block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
@@ -23,13 +25,13 @@
             <div class="col-start-6 col-span-2 grid grid-rows-3 gap-y-5">
                 <div class="row-span-2">
                     <h6 class="text-gray-300">Address</h6>
-                    <h4 class="text-[2vw] font-semibold">Seminyak</h4>
+                    <h4 class="text-[2vw]">Seminyak</h4>
                     <p class="text-[1vw]">
                         Gg. Meduri Lingkungan Taman Mertanadi No.5, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung,
                         Bali
                         80361
                     </p>
-                    <h4 class="text-[2vw] font-semibold">Canggu</h4>
+                    <h4 class="text-[2vw]">Canggu</h4>
                     <p class="text-[1vw]]">
                     Jl. Kubu Manyar No.22, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
                     </p>
@@ -37,7 +39,7 @@
                 <div class="">
                     <h6 class="text-gray-300">Phone</h6>
                     <p class="text-sm">
-                        +62 XXXX
+                    (0361) 9348918
                     </p>
                     <h6 class="text-gray-300">Enquiries</h6>
                     <p class="text-sm">
@@ -62,7 +64,7 @@
         class="z-30 fixed flex flex-wrap items-center justify-between w-[90%] left-[5%] py-4 px-4 text-lg text-gray-700 bg-transparent ease-in-out duration-500 rounded-md">
         <div class="flex items-center mr-6">
             <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-whitefont-1.png')}}" class="h-16" alt="">
+                <img src="{{asset ('img/bcc-horizontal-whitefont-1.webp')}}" class="h-16" alt="">
             </a>
         </div>
     </div> -->
@@ -70,7 +72,7 @@
     <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white"
         id="menuMobile">
         <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20 ml-4" alt="">
+            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-4" alt="">
         </a>
         <div class="mt-12 grid grid-cols-8 py-10">
             <div class="grid grid-rows-4 text-black col-span-3 text-[7vw]">

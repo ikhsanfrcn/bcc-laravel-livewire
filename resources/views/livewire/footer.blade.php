@@ -3,7 +3,7 @@
     <div class="grid grid-cols-6 container mx-20">
         <div class="grid col-span-2 h-20">
             <a href="/">
-                <!-- <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-20 ml-2" alt=""> -->
+                <!-- <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-2" alt=""> -->
             </a>
         </div>
     </div>
@@ -23,9 +23,9 @@
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Usefull Links</h5>
             <ul class="pt-3 space-y-1 text-neutral-400 text-[1vw]">
                 <!-- <li><a href="#" class="hover:text-neutral-200 ">Shop</a></li> -->
-                <li><a href="#" class="hover:text-neutral-200 ">About</a></li>
-                <li><a href="#" class="hover:text-neutral-200 ">FAQs</a></li>
-                <li><a href="#" class="hover:text-neutral-200 ">Contact</a></li>
+                <li><a href="about-us" class="hover:text-neutral-200 ">About</a></li>
+                <!-- <li><a href="#" class="hover:text-neutral-200 ">FAQs</a></li> -->
+                <li><a href="contact" class="hover:text-neutral-200 ">Contact</a></li>
             </ul>
         </div>
         <div>
@@ -54,27 +54,33 @@
         <div class="col-start-2">
             <div class="grid grid-rows-4 gap-1">
                 <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Online Order BCC Sunset</h5>
-                <img src="{{ asset('img/footer/Gofood-logo.png') }}" class="w-[10vw] object-cover" alt="Gofood" />
-                <img src="{{ asset('img/footer/grabfood-logo-2.png') }}"
-                    class="w-[10vw] ml-[0.7vw] mt-[0.7vw] object-cover" alt="Grabfood" />
-                <img src="{{ asset('img/footer/shopee-food-2.png') }}" class="w-[10vw] ml-[0.4vw] object-cover"
-                    alt="Shopeefood" />
+                <!-- <img src="{{ asset('img/footer/Gofood-logo.webp') }}" class="w-[10vw] object-cover" alt="Gofood" /> -->
+                <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}"
+                        class="w-[10vw] object-cover" alt="Gofood" /></a>
+                <a href="https://food.grab.com/id/id/restaurant/bali-coffee-club-seminyak-delivery/6-C3AVA2KEE7EGJT"><img
+                        src="{{ asset('img/footer/grabfood-logo-2.webp') }}"
+                        class="w-[10vw] ml-[0.7vw] mt-[0.7vw] object-cover" alt="Grabfood" /></a>
+                <a
+                    href="https://shopee.co.id/universal-link/now-food/shop/20264588?deep_and_deferred=1&shareChannel=copy_link"><img
+                        src="{{ asset('img/footer/shopee-food-2.webp') }}" class="w-[10vw] ml-[0.4vw] object-cover"
+                        alt="Shopeefood" /></a>
             </div>
         </div>
         <div class="grid grid-rows-4 gap-1">
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Online Order BCC Sunset</h5>
-            <img src="{{ asset('img/footer/Gofood-logo.png') }}" class="w-[10vw] object-cover" alt="Gofood" />
+            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}"
+                        class="w-[10vw] object-cover" alt="Gofood" /></a>
         </div>
         <div class="grid grid-rows-6">
             <div class="row-start-5 grid grid-cols-8 place-items-center">
-                <img src="{{ asset('img/footer/Bank_Mandiri_logo_white_bg-1.png') }}"
+                <img src="{{ asset('img/footer/bank-mandiri-logo-white-bg-1.webp') }}"
                     class="w-[10vw] object-cover col-span-2" alt="Mandiri" />
-                <img src="{{ asset('img/footer/2-100x100.png') }}" class="w-[10vw] object-cover" alt="Shopee" />
-                <img src="{{ asset('img/footer/3-100x100.png') }}" class="w-[10vw] object-cover" alt="OVO" />
-                <img src="{{ asset('img/footer/4-100x100.png') }}" class="w-[10vw] object-cover" alt="LinkAja" />
-                <img src="{{ asset('img/footer/5-100x100.png') }}" class="w-[10vw] object-cover" alt="QRIS" />
-                <img src="{{ asset('img/footer/6-100x100.png') }}" class="w-[10vw] object-cover" alt="VISA" />
-                <img src="{{ asset('img/footer/7-100x100.png') }}" class="w-[10vw] object-cover" alt="Mastercard" />
+                <img src="{{ asset('img/footer/2-100x100.webp') }}" class="w-[10vw] object-cover" alt="Shopee" />
+                <img src="{{ asset('img/footer/3-100x100.webp') }}" class="w-[10vw] object-cover" alt="OVO" />
+                <img src="{{ asset('img/footer/4-100x100.webp') }}" class="w-[10vw] object-cover" alt="LinkAja" />
+                <img src="{{ asset('img/footer/5-100x100.webp') }}" class="w-[10vw] object-cover" alt="QRIS" />
+                <img src="{{ asset('img/footer/6-100x100.webp') }}" class="w-[10vw] object-cover" alt="VISA" />
+                <img src="{{ asset('img/footer/7-100x100.webp') }}" class="w-[10vw] object-cover" alt="Mastercard" />
             </div>
         </div>
     </div>
@@ -88,7 +94,7 @@
     <div class="grid grid-cols-12 container">
         <div class="grid col-span-7 col-start-2 grid-rows-2">
             <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-blackfont.png')}}" class="h-10" alt="BCC">
+                <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-10" alt="BCC">
             </a>
         </div>
     </div>
@@ -108,9 +114,9 @@
             <h5 class="font-semibold text-neutral-600 text-[2vw]">Usefull Links</h5>
             <ul class="pt-3 space-y-1 text-neutral-400 text-[1.5vw]">
                 <!-- <li><a href="#" class="hover:text-neutral-200 ">Shop</a></li> -->
-                <li><a href="#" class="hover:text-neutral-200 ">About</a></li>
-                <li><a href="#" class="hover:text-neutral-200 ">FAQs</a></li>
-                <li><a href="#" class="hover:text-neutral-200 ">Contact</a></li>
+                <li><a href="about-us" class="hover:text-neutral-200 ">About</a></li>
+                <!-- <li><a href="#" class="hover:text-neutral-200 ">FAQs</a></li> -->
+                <li><a href="contact" class="hover:text-neutral-200 ">Contact</a></li>
             </ul>
         </div>
         <div>
@@ -126,15 +132,19 @@
     <div class="pt-5 grid grid-cols-3 container mx-auto pb-5 px-[2vw]">
         <div class="grid grid-rows-4 gap-1">
             <h5 class="font-semibold text-neutral-600 text-[2vw]">Online Order BCC Sunset</h5>
-            <img src="{{ asset('img/footer/Gofood-logo.png') }}" class="w-[20vw] object-cover" alt="Gofood" />
-            <img src="{{ asset('img/footer/grabfood-logo-2.png') }}" class="w-[20vw] ml-[1.5vw] mt-[0.7vw] object-cover"
-                alt="Grabfood" />
-            <img src="{{ asset('img/footer/shopee-food-2.png') }}" class="w-[20vw] ml-[1vw] object-cover"
-                alt="Shopeefood" />
+            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}"
+                    class="w-[20vw] object-cover" alt="Gofood" /></a>
+            <a href="https://food.grab.com/id/id/restaurant/bali-coffee-club-seminyak-delivery/6-C3AVA2KEE7EGJT"><img
+                    src="{{ asset('img/footer/grabfood-logo-2.webp') }}"
+                    class="w-[20vw] ml-[1.5vw] mt-[0.7vw] object-cover" alt="Grabfood" /></a>
+            <a
+                href="https://shopee.co.id/universal-link/now-food/shop/20264588?deep_and_deferred=1&shareChannel=copy_link"><img
+                    src="{{ asset('img/footer/shopee-food-2.webp') }}" class="w-[20vw] ml-[1vw] object-cover"
+                    alt="Shopeefood" /></a>
         </div>
         <div class="grid grid-rows-4 gap-1">
             <h5 class="font-semibold text-neutral-600 text-[2vw]">Online Order BCC Sunset</h5>
-            <img src="{{ asset('img/footer/Gofood-logo.png') }}" class="w-[20vw] object-cover" alt="Gofood" />
+            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}" class="w-[20vw] object-cover" alt="Gofood" />
         </div>
         <!--  -->
         <div class="pr-5">
@@ -149,17 +159,17 @@
             </div>
         </div>
         <div class="col-start-2 col-span-2">
-        <div class="row-start-5 grid grid-cols-8 place-items-center">
-                <img src="{{ asset('img/footer/Bank_Mandiri_logo_white_bg-1.png') }}"
+            <div class="row-start-5 grid grid-cols-8 place-items-center">
+                <img src="{{ asset('img/footer/bank-mandiri-logo-white-bg-1.webp') }}"
                     class="w-[10vw] object-cover col-span-2" alt="Mandiri" />
-                <img src="{{ asset('img/footer/2-100x100.png') }}" class="w-[10vw] object-cover" alt="Shopee" />
-                <img src="{{ asset('img/footer/3-100x100.png') }}" class="w-[10vw] object-cover" alt="OVO" />
-                <img src="{{ asset('img/footer/4-100x100.png') }}" class="w-[10vw] object-cover" alt="LinkAja" />
-                <img src="{{ asset('img/footer/5-100x100.png') }}" class="w-[10vw] object-cover" alt="QRIS" />
-                <img src="{{ asset('img/footer/6-100x100.png') }}" class="w-[10vw] object-cover" alt="VISA" />
-                <img src="{{ asset('img/footer/7-100x100.png') }}" class="w-[10vw] object-cover" alt="Mastercard" />
+                <img src="{{ asset('img/footer/2-100x100.webp') }}" class="w-[10vw] object-cover" alt="Shopee" />
+                <img src="{{ asset('img/footer/3-100x100.webp') }}" class="w-[10vw] object-cover" alt="OVO" />
+                <img src="{{ asset('img/footer/4-100x100.webp') }}" class="w-[10vw] object-cover" alt="LinkAja" />
+                <img src="{{ asset('img/footer/5-100x100.webp') }}" class="w-[10vw] object-cover" alt="QRIS" />
+                <img src="{{ asset('img/footer/6-100x100.webp') }}" class="w-[10vw] object-cover" alt="VISA" />
+                <img src="{{ asset('img/footer/7-100x100.webp') }}" class="w-[10vw] object-cover" alt="Mastercard" />
             </div>
-            </div>
+        </div>
         <!--  -->
 
     </div>

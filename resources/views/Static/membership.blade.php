@@ -6,9 +6,9 @@
 @section('content')
 
 <header class="h-96 md:h-screen grid md:grid-cols-3 items-center bg-center bg-cover"
-    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.jpeg')}});">
+    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.webp')}});">
     <div class="md:col-start-2">
-        <img src="{{ asset('img/we-know-coffee-white-1.png') }}" class="h-5 md:h-10 mx-auto" alt="We Know Coffee" />
+        <img src="{{ asset('img/we-know-coffee-white-1.webp') }}" class="h-5 md:h-10 mx-auto" alt="We Know Coffee" />
         <h1 class="pt-5 font-bold text-[12vw] md:text-[5vw] text-white text-center">
             Membership
         </h1>
