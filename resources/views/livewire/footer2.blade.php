@@ -1,4 +1,4 @@
-<footer class="-z-50 pt-12 fixed bottom-0 w-11/12 bg-gray-500 text-white" data-aos="fade-up">
+<footer class="-z-50 pt-12 fixed bottom-0 w-11/12 bg-gray-500 text-white">
     <div class="grid grid-cols-6 container mx-20 py-10">
         <div class="grid col-span-2 grid-rows-2">
             <a href="#">

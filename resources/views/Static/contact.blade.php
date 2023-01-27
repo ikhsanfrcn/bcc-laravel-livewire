@@ -5,15 +5,15 @@
 
 @section('content')
 <header class="h-96 md:h-screen bg-center bg-fixed bg-cover grid grid-rows-6 bg-white"
-    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.jpeg')}});">
+    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.webp')}});">
     <!-- <div class="row-start-3 grid grid-cols-3">
         <div class="col-start-2 text-white">
-            <img src="{{ asset('img/we-know-coffee-white-1.png') }}" class="h-5 h-10 mx-auto" alt="We Know Coffee" />
+            <img src="{{ asset('img/we-know-coffee-white-1.webp') }}" class="h-5 h-10 mx-auto" alt="We Know Coffee" />
         </div>
     </div> -->
     <div class="row-start-3 grid grid-cols-6 md:grid-cols-4">
         <div class="col-start-2 col-span-4 md:col-span-0  text-white">
-            <h3 class="pt-10 text-[4vw] md:text-[2vw]">Get in touch</h3>
+            <h6 class="pt-10 text-[4vw] md:text-[2vw]">Get in touch</h6>
             <h1 class="text-[12vw] md:text-[7vw]">
                 Contact
             </h1>
@@ -21,7 +21,7 @@
     </div>
 </header>
 
-<main class="bg-white drop-shadow-2xl py-20">
+<main class="h-screen bg-white drop-shadow-2xl py-20">
 
     <section>
         <div class="grid grid-cols-12 gap-x-5 md:gap-x-20 container mx-auto">
@@ -29,15 +29,15 @@
                 <h4 class="text-[4vw] md:text-[2vw]">Location</h4>
             </div>
             <div class="col-start-5 md:col-start-6 col-span-4 md:col-span-3 items-center">
-                <div class="text-neutral-400">
-                    <hr class=" w-full h-0.5 mx-auto bg-neutral-400 border-0 rounded">
+                <div class="text-neutral-500">
+                    <hr class=" w-full h-0.5 mx-auto bg-neutral-500 border-0 rounded">
                     <h6 class="text-[2vw] md:text-[1vw]">Address</h6>
                 </div>
 
             </div>
             <div class="col-span-3 md:col-span-2 items-center">
-                <div class="text-neutral-400">
-                    <hr class=" w-full h-0.5 mx-auto bg-neutral-400 border-0 rounded">
+                <div class="text-neutral-500">
+                    <hr class=" w-full h-0.5 mx-auto bg-neutral-500 border-0 rounded">
                     <h6 class="text-[2vw] md:text-[1vw]">Phone</h6>
                 </div>
             </div>
@@ -71,8 +71,8 @@
                 <h4 class="text-[4vw] md:text-[2vw]">Enquiries</h4>
             </div>
         <div class="col-start-5 md:col-start-6 col-span-7 md:col-span-5 grid grid-rows-2 items-center">
-            <div class="text-neutral-400">
-                <hr class=" w-full h-0.5 mx-auto bg-neutral-400 border-0 rounded">
+            <div class="text-neutral-500">
+                <hr class=" w-full h-0.5 mx-auto bg-neutral-500 border-0 rounded">
                 <h6 class="text-[2vw] md:text-[1vw]">E-mail</h6>
             </div>
             <p class="text-[4vw] md:text-[2vw]">admin@balicoffeeclub.com</p>

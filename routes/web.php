@@ -40,6 +40,9 @@ Route::get('/coffeepedia', function () {
 Route::get('/contact', function () {
     return view('Static.contact');
 });
+Route::get('/membership', function () {
+    return view('Static.membership');
+});
 
 Route::get('/register', function () {
     return view('Auth.register');
