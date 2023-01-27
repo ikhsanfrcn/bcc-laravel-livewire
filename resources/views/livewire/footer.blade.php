@@ -1,14 +1,14 @@
 <!-- DESKTOP -->
-<footer class="hidden -z-10 pt-12 fixed bottom-0 h-screen w-full bg-white md:block">
-    <div class="grid grid-cols-6 container mx-20">
-        <div class="grid col-span-2 h-20">
+<footer class="hidden -z-10 pt-[1.2vw] fixed bottom-0 w-screen bg-white lg:block">
+    <div class="grid grid-cols-6 container mx-[2vw]">
+        <!-- <div class="grid col-span-2 h-20">
             <a href="/">
-                <!-- <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-2" alt=""> -->
+                <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-2" alt="">
             </a>
-        </div>
+        </div> -->
     </div>
     <!--  -->
-    <div class="pt-20 grid grid-cols-5 gap-x-[1vw] container mx-auto px-[2vw]">
+    <div class="pt-[2vw] grid grid-cols-5 gap-x-[1vw] container mx-auto px-[2vw]">
         <div class="col-span-2">
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">About Bali Coffe Club</h5>
             <p class="py-2 text-[0.8vw] font-light w-full md:w-3/4 text-justify">We prize quality above all else. The
@@ -40,11 +40,11 @@
         <div>
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Subscribe to Our Newsletter</h5>
             <div class="pt-3 grid grid-rows-2 gap-2 text-[1vw]">
-                <input type="text" placeholder="Name" class="bg-neutral-200 rounded-md w-full p-[1vw]">
+                <input type="text" placeholder="Name" class="bg-neutral-200 w-full p-[1vw]">
                 <input type="email" name="" id="" placeholder="Enter your email"
-                    class="bg-neutral-200 rounded-md w-full p-[1vw]">
+                    class="bg-neutral-200 w-full p-[1vw]">
                 <div class="grid grid-cols-3">
-                    <button class="col-start-3 bg-[#ff5700] rounded-md p-[1vw] text-white text-[1vw]">Submit</button>
+                    <button class="col-start-3 bg-[#ff5700] p-[1vw] text-white text-[1vw]">Submit</button>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
 </footer>
 
 <!-- MOBILE -->
-<footer class="block -z-10 pt-12 fixed bottom-0 w-full bg-white md:hidden">
+<footer class="block -z-10 pt-12 fixed bottom-0 w-full bg-white lg:hidden">
     <div class="grid grid-cols-12 container">
         <div class="grid col-span-7 col-start-2 grid-rows-2">
             <a href="/">

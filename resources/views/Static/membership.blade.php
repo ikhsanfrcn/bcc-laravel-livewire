@@ -15,7 +15,7 @@
     </div>
 </header>
 
-<main class="bg-white drop-shadow-xl">
+<main class="bg-neutral-100 drop-shadow-xl">
     <section class="h-screen grid grid-cols-12 grid-rows-6 container mx-auto">
         <div class="col-start-2 col-span-10 row-start-2 md:row-start-3">
             <div class="grid gap-y-10">

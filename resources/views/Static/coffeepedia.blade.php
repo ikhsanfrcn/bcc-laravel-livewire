@@ -11,6 +11,7 @@
             </div>
         </div>
     </header>
-    <main class="py-5 md:py-12 lg:py-20 px-5 md:px-12 lg:px-20 bg-white">
+    <main class="py-5 md:py-12 lg:py-20 px-5 md:px-12 lg:px-20 bg-neutral-100">
+        
     </main>
 @endsection

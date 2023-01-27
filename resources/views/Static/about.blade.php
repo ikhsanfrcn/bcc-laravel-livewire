@@ -14,9 +14,9 @@
     </div>
 </header>
 
-<main class="bg-white drop-shadow-xl text-justify md:text-left">
+<main class="bg-neutral-100 drop-shadow-xl text-justify md:text-left">
     <!-- DESKTOP -->
-    <section class="p-5 md:p-0 pt-20 md:pt-32 bg-white container mx-auto">
+    <section class="p-5 md:p-0 pt-20 md:pt-32 container mx-auto">
         <div class="grid md:grid-cols-12 gap-x-5 md:gap-x-10 gap-y-5 md:gap-y-0 items-center">
             <div class="col-span-12 md:col-span-6">
                 <h2>About Us</h2>

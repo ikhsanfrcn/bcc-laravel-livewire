@@ -31,7 +31,7 @@
     </video>
 </header>
 
-<main class="z-40 bg-white drop-shadow-2xl">
+<main class="bg-neutral-100 drop-shadow-2xl">
     <!--  -->
     <section class="py-20 px-5"
         style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url({{ asset('img/home/Uluwatu-scaled.webp')}});">
@@ -99,8 +99,18 @@
         </div>
     </section>
 
+    <!-- INSTAGRAM -->
+    <section class="grid md:grid-cols-3">
+        <a href=""><img src="{{ asset('img/home/instagram/Chillhouse-Breakfast-2.webp') }}" class="w-screen mx-auto"
+                alt=""></a>
+        <a href=""><img src="{{ asset('img/home/instagram/Chillhouse-Breakfast-1.webp') }}" class="w-screen mx-auto"
+                alt=""></a>
+        <a href=""><img src="{{ asset('img/home/instagram/Chillhouse-Breakfast.webp') }}" class="w-screen mx-auto"
+                alt=""></a>
+    </section>
+
     <!--  -->
-    <section class="p-5 pt-20 md:pt-32 bg-white">
+    <section class="p-5 pt-20 md:pt-32">
         <div class="grid md:grid-cols-2 place-items-center container mx-auto">
             <div class="">
                 <h2 class="text-3xl md:text-4xl font-bold">Superior taste from “the island of the gods”</h2>
@@ -128,7 +138,7 @@
     </section>
 
     <!-- OUR NEWS -->
-    <section class="p-5 md:pt-32 bg-white">
+    <section class="p-5 md:pt-32">
         <div class="text-center">
             <h3 class="text-[4vw] lg:text-[2vw]">OUR NEWS</h3>
             <h2 class="font-bold text-[6vw] lg:text-[3vw]">Coffeepedia</h2>
@@ -147,20 +157,11 @@
     <!-- <section> -->
     @include('components.ctayt')
     <!-- </section> -->
-
-    <!-- INSTAGRAM -->
-    <section class="grid md:grid-cols-3">
-        <a href=""><img src="{{ asset('img/home/instagram/Chillhouse-Breakfast-2.webp') }}" class="w-screen mx-auto"
-                alt=""></a>
-        <a href=""><img src="{{ asset('img/home/instagram/Chillhouse-Breakfast-1.webp') }}" class="w-screen mx-auto"
-                alt=""></a>
-        <a href=""><img src="{{ asset('img/home/instagram/Chillhouse-Breakfast.webp') }}" class="w-screen mx-auto"
-                alt=""></a>
-    </section>
-
-    <section class="">
+    <!-- <section> -->
         @include('components.tripadvisor')
-    </section>
+    <!-- </section> -->
+
+     
 
     <!-- OUR RECOMMENDATIONS -->
     <!-- <section class="py-20 px-5"

@@ -4,7 +4,7 @@
 @section('meta_keywords', 'Bali Cofffee Club meta keyword contact')
 
 @section('content')
-<header class="h-96 md:h-screen bg-center bg-fixed bg-cover grid grid-rows-6 bg-white"
+<header class="h-96 md:h-screen bg-center bg-fixed bg-cover grid grid-rows-6 bg-black"
     style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.webp')}});">
     <!-- <div class="row-start-3 grid grid-cols-3">
         <div class="col-start-2 text-white">
@@ -21,7 +21,7 @@
     </div>
 </header>
 
-<main class="h-screen bg-white drop-shadow-2xl py-20">
+<main class="h-screen bg-neutral-100 drop-shadow-2xl py-20">
 
     <section>
         <div class="grid grid-cols-12 gap-x-5 md:gap-x-20 container mx-auto">

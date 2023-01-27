@@ -7,23 +7,30 @@
     </div>
 </div>
 <nav class="hidden md:block">
-    <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white"
+    <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white drop-shadow-xl"
         id="menu">
         <div class="grid grid-cols-5">
-        <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-4" alt="">
-        </a>
+            <a href="/">
+                <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-4" alt="">
+            </a>
         </div>
-        <div class="mt-12 grid grid-cols-8 py-16">
-            <div class="grid gap-y-5 text-black col-start-2 col-span-3 text-3xl">
+        <div class="mt-12 grid grid-cols-8 py-16 drop-shadow-xl">
+            <div class="grid gap-y-5 text-black col-start-2 col-span-3 text-[2.5vw]">
                 <a class="block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
+                <div class="grid grid-cols-7 text-[1.5vw] text-center place-items-center">
+                    <a class="block hover:text-red-400 col-start-3" href="coffee">COFFEE</a>
+                    <p>/</p>
+                    <a class="block hover:text-red-400" href="bakery">BAKERY</a>
+                    <p>/</p>
+                    <a class="block hover:text-red-400" href="eatery">EATERY</a>
+                </div>
                 <a class="block hover:text-red-400" href="about-us">ABOUT US</a>
                 <a class="block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
                 <a class="block hover:text-red-400" href="contact">CONTACT</a>
                 <a class="block hover:text-red-400" href="membership">MEMBERSHIP</a>
             </div>
             <div class="col-start-6 col-span-2 grid grid-rows-3 gap-y-5">
-                <div class="row-span-2">
+                <div class="row-span-2 grid">
                     <h6 class="text-gray-300">Address</h6>
                     <h4 class="text-[2vw]">Seminyak</h4>
                     <p class="text-[1vw]">
@@ -32,17 +39,17 @@
                         80361
                     </p>
                     <h4 class="text-[2vw]">Canggu</h4>
-                    <p class="text-[1vw]]">
-                    Jl. Kubu Manyar No.22, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
+                    <p class="text-[1vw]">
+                        Jl. Kubu Manyar No.22, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
                     </p>
                 </div>
                 <div class="">
                     <h6 class="text-gray-300">Phone</h6>
-                    <p class="text-sm">
-                    (0361) 9348918
+                    <p class="text-[1vw]">
+                        (0361) 9348918
                     </p>
                     <h6 class="text-gray-300">Enquiries</h6>
-                    <p class="text-sm">
+                    <p class="text-[1vw]">
                         admin@balicoffeeclub.com
                     </p>
                 </div>
@@ -77,6 +84,13 @@
         <div class="mt-12 grid grid-cols-8 py-10">
             <div class="grid grid-rows-4 text-black col-span-3 text-[7vw]">
                 <a class="p-4 py-2 block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
+                <div class="pl-10 grid grid-cols-5 text-[4vw] ptext-center place-items-center">
+                    <a class="block hover:text-red-400" href="coffee">COFFEE</a>
+                    <p>/</p>
+                    <a class="block hover:text-red-400" href="bakery">BAKERY</a>
+                    <p>/</p>
+                    <a class="block hover:text-red-400" href="eatery">EATERY</a>
+                </div>
                 <a class="p-4 py-2 block hover:text-red-400" href="about-us">ABOUT US</a>
                 <a class="p-4 py-2 block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
                 <a class="p-4 py-2 block hover:text-red-400" href="contact">CONTACT</a>
