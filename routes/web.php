@@ -4,6 +4,7 @@ use App\Http\Controllers\BlogpostController;
 use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,17 +41,17 @@ Route::get('/contact', function () {
     return view('Static.contact');
 });
 
-// Administrator Pages Route
-Route::get('/login', function () {
-    return view('Auth.login');
-});
 Route::get('/register', function () {
     return view('Auth.register');
 });
 
+Route::get('/login',[LoginController::class,'index']);
+Route::post('/login',[LoginController::class,'authenticate']);
+
+// Administrator Pages Route
 Route::prefix('admin')->group(function () {
     Route::resource('/dashboard', AdminController::class);
     Route::resource('/blogpost', BlogpostController::class);
     Route::resource('/user', UserController::class);
     Route::resource('/subscriber', SubscriberController::class);
-});
+})->name('Administrator');
