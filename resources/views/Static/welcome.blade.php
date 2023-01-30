@@ -25,7 +25,7 @@
                                 type="video/mp4" />
                             Your browser does not support the video tag.
                         </video> -->
-        <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+        <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none hidden md:block">
             <source src="{{ asset('video/Bali-Coffee-Club_web2.mp4') }}" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
@@ -37,7 +37,7 @@
             style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url({{ asset('img/home/Uluwatu-scaled.webp') }});">
             <div class="grid md:grid-cols-2 container mx-auto place-items-center">
                 <div class="text-white">
-                    <h5 class="font-semibold text-[1.2vw]">ABOUT BCC COFFEE</h5>
+                    <h5 class="font-semibold text-[4vw] md:text-[1.2vw]">ABOUT BCC COFFEE</h5>
                     <h2 class="pt-10 font-bold text-[6vw] md:text-[2vw]">The Story Behind Bali, the Coffee, and the Club
                     </h2>
                     <p class="mt-5 text-justify md:text-left">Bali is home to a rich culture and holds a myriad of ways
@@ -64,22 +64,22 @@
                     <h2 class="py-12 font-bold text-[6vw] md:text-[2vw]">Authentical Product</h2>
                     <div class="grid lg:grid-cols-3 gap-y-10 lg:gap-y-0">
                         <div class="grid grid-cols-2 place-items-center">
-                            <img src="{{ asset('img/home/authen-icon-1.webp') }}" class="object-cover h-24 md:h-28"
+                            <img src="{{ asset('img/home/authen-icon-1.webp') }}" class="object-cover h-20 md:h-24 lg:h-28"
                                 alt="Authen" />
-                            <p class="">We source coffee from local Indonesian farmers who practice responsible
+                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">We source coffee from local Indonesian farmers who practice responsible
                                 growing
                                 techniques.</p>
                         </div>
                         <div class="grid grid-cols-2 place-items-center">
-                            <img src="{{ asset('img/home/authen-icon-2.webp') }}" class="object-cover h-24 md:h-28"
+                            <img src="{{ asset('img/home/authen-icon-2.webp') }}" class="object-cover h-20 md:h-24 lg:h-28"
                                 alt="Authen" />
-                            <p class="">We roast our coffee in our world-class roastery nestled in the heart of Bali.
+                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">We roast our coffee in our world-class roastery nestled in the heart of Bali.
                             </p>
                         </div>
                         <div class="grid grid-cols-2 place-items-center">
-                            <img src="{{ asset('img/home/authen-icon-3.webp') }}" class="object-cover h-24 md:h-28"
+                            <img src="{{ asset('img/home/authen-icon-3.webp') }}" class="object-cover h-20 md:h-24 lg:h-28"
                                 alt="Authen" />
-                            <p class="">Our finished product is packaged and shared out to our club members, locally
+                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">Our finished product is packaged and shared out to our club members, locally
                                 and
                                 around
                                 the globe.</p>
@@ -90,7 +90,7 @@
         </section>
 
         <!--  -->
-        <section class="md:h-screen py-20 px-5 bg-fixed bg-center"
+        <section class="lg:h-screen py-20 px-5 bg-fixed bg-center"
             style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url({{ asset('img/home/temple-gates-lempuyang-luhur-temple-bali-indonesia-1.webp') }});">
             <h1 class="text-4xl text-center font-bold text-white">Our Popular Coffee</h1>
             <div class="mt-20 grid grid-cols-3">
