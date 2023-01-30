@@ -10,7 +10,6 @@
     <title>Bali Coffee Club - @yield('page_title')</title>
     @vite('resources/css/app.css')
     @livewireStyles
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,11 +29,6 @@
     @livewire('navbar')
     @yield('content')
     @livewire('footer')
-
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
     <!-- FOOTER SPACER -->
     <div class="my-[110vw] md:my-[75vw] lg:my-[50vw]">
     </div>
