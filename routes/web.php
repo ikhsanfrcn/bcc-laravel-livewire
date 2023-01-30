@@ -61,4 +61,4 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::resource('/user', UserController::class);
     Route::resource('/subscriber', SubscriberController::class);
     Route::resource('/products', ProductController::class);
-})->name('Administrator');
+});

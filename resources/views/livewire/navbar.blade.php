@@ -31,6 +31,7 @@
                 @auth
                 <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
                 @else
+                <a class="block hover:text-red-400" href="/register">REGISTER</a>
                 <a class="block hover:text-red-400" href="/login">LOGIN</a>
                 @endauth
             </div>

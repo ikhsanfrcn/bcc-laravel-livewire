@@ -91,8 +91,9 @@ class BlogpostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Blogpost $blogpost)
     {
-        //
+        Blogpost::destroy($blogpost->post_id);
+        return redirect()->route('blogpost.index')->with('success', 'Blogpost Deleted Successfully!');
     }
 }

@@ -17,13 +17,13 @@ class ProductSeeder extends Seeder
     {
         $products = [
             [
-                'product_id'=>'BCC001','product_name' => 'Affogato', 'product_type_id' => 1, 'product_price' => '35000','product_image'=>'https://balicoffeeclub.com/wp-content/uploads/2022/12/DSC00844.webp','product_description'=>'Warm goodness drizzled with caramel sauce and sprinkled with roasted cashew'
+                'product_code'=>'BCC001','product_name' => 'Affogato', 'product_type_id' => 1, 'product_price' => '35000','product_image'=>'https://balicoffeeclub.com/wp-content/uploads/2022/12/DSC00844.webp','product_description'=>'Warm goodness drizzled with caramel sauce and sprinkled with roasted cashew'
             ],
             [
-                'product_id'=>'BCC002','product_name' => 'Raisin Danish', 'product_type_id' => 2, 'product_price' => '20000','product_image'=>'https://balicoffeeclub.com/wp-content/uploads/2022/06/pastry_1-83.jpg','product_description'=>'Warm goodness drizzled with caramel sauce and sprinkled with roasted cashew'
+                'product_code'=>'BCC002','product_name' => 'Raisin Danish', 'product_type_id' => 2, 'product_price' => '20000','product_image'=>'https://balicoffeeclub.com/wp-content/uploads/2022/06/pastry_1-83.jpg','product_description'=>'Warm goodness drizzled with caramel sauce and sprinkled with roasted cashew'
             ],
             [
-                'product_id'=>'BCC003','product_name' => 'Banana Choco Mouse', 'product_type_id' => 3, 'product_price' => '10000','product_image'=>'https://balicoffeeclub.com/wp-content/uploads/2022/06/pastry_1-69.jpg','product_description'=>'Warm goodness drizzled with caramel sauce and sprinkled with roasted cashew'
+                'product_code'=>'BCC003','product_name' => 'Banana Choco Mouse', 'product_type_id' => 3, 'product_price' => '10000','product_image'=>'https://balicoffeeclub.com/wp-content/uploads/2022/06/pastry_1-69.jpg','product_description'=>'Warm goodness drizzled with caramel sauce and sprinkled with roasted cashew'
             ]
         ];
         DB::table('products')->insert($products);

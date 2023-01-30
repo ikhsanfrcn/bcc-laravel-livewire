@@ -150,9 +150,13 @@
                     <div class="text-base text-neutral-400">IDR {{ number_format($product->product_price) }}</div>
                 </div>
                 <div class="mt-2 flex space-x-4">
-                    <div>
-                        <a href="" class="text-neutral-400 hover:text-red-500">Delete</a>
-                    </div>
+                    <form action="/admin/products/{{ $product->product_id }}" method="POST">
+                        @method('delete')
+                        @csrf
+                        <button class="text-neutral-400 hover:text-red-500">
+                            Delete
+                        </button>
+                    </form>
                     <div>
                         <a href="" class="text-neutral-400 hover:text-blue-500">Edit</a>
                     </div>
