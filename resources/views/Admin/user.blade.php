@@ -22,7 +22,7 @@
         </div>
         @foreach ($user as $user)
             <div class="col-span-3 px-2 py-2 text-neutral-600">
-                {{ $user->user_id }}
+                {{ $user->id }}
             </div>
             <div class="col-span-3 px-2 py-2 text-sm text-neutral-600">
                 {{ $user->name }}

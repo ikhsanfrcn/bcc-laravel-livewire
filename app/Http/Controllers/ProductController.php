@@ -91,8 +91,9 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Products $product)
     {
-        //
+        Products::destroy($product->product_id);
+        return redirect()->route('products.index')->with('success', 'Blogpost Deleted Successfully!');
     }
 }
