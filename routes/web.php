@@ -4,7 +4,9 @@ use App\Http\Controllers\BlogpostController;
 use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +20,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('/', IndexController::class);
+
 // Static Pages
-Route::get('/', function () {
-    return view('Static.welcome');
-});
 Route::get('/about-us', function () {
     return view('Static.about');
 });
@@ -48,13 +49,16 @@ Route::get('/register', function () {
     return view('Auth.register');
 });
 
-Route::get('/login',[LoginController::class,'index']);
-Route::post('/login',[LoginController::class,'authenticate']);
+// Login Controller
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 // Administrator Pages Route
-Route::prefix('admin')->group(function () {
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::resource('/dashboard', AdminController::class);
     Route::resource('/blogpost', BlogpostController::class);
     Route::resource('/user', UserController::class);
     Route::resource('/subscriber', SubscriberController::class);
+    Route::resource('/products', ProductController::class);
 })->name('Administrator');

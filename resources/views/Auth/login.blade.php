@@ -9,11 +9,12 @@
             <div class="font-black text-neutral-600 tracking-tight text-3xl w-3/4">
                 Welcome to <br />Bali Coffee Club
             </div>
+
             <form action="/login" method="POST" class="mt-4 space-y-4">
                 @csrf
-                <input type="email" name="login_email" placeholder="Email" id=""
-                    class="w-full px-2 py-2 bg-neutral-50" autofocus required>
-                <input type="password" name="login_password" placeholder="Password" id=""
+                <input type="email" name="email" placeholder="Email" id="" class="w-full px-2 py-2 bg-neutral-50"
+                    autofocus required>
+                <input type="password" name="password" placeholder="Password" id=""
                     class="w-full px-2 py-2 bg-neutral-50" required>
                 <button type="submit"
                     class="bg-blue-400 w-full px-2 py-2 rounded-md text-white font-bold hover:bg-white hover:text-blue-400 transition ease-in-out duration-300">Login</button>
@@ -25,9 +26,10 @@
                         class="hover:text-neutral-800 transition ease-in-out duration-300">Register here</a>
                 </div>
             </form>
+
         </div>
         <div class="hidden md:block md:col-span-4 lg:col-span-6">
-            <img src="{{ asset('img/bcc-1.jpg') }}" class="h-full object-cover" alt="Bali Coffee Club Canggu">
+            <img src="{{ asset('img/bcc-1.webp') }}" class="h-full object-cover" alt="Bali Coffee Club Canggu">
         </div>
     </section>
 

@@ -29,6 +29,7 @@ class User extends Authenticatable
     {
         return 'string';
     }
+    
 
     use HasApiTokens, HasFactory, Notifiable;
 

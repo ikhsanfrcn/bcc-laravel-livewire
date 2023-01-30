@@ -20,7 +20,7 @@
             </form>
         </div>
         <div class="hidden md:block md:col-span-4 lg:col-span-6">
-            <img src="{{asset('img/bcc-1.jpg')}}" class="h-full object-cover" alt="Bali Coffee Club Canggu">
+            <img src="{{asset('img/bcc-1.webp')}}" class="h-full object-cover" alt="Bali Coffee Club Canggu">
         </div>
     </section>
 
