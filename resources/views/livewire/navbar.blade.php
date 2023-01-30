@@ -28,6 +28,11 @@
                 <a class="block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
                 <a class="block hover:text-red-400" href="contact">CONTACT</a>
                 <a class="block hover:text-red-400" href="membership">MEMBERSHIP</a>
+                @auth
+                <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
+                @else
+                <a class="block hover:text-red-400" href="/login">LOGIN</a>
+                @endauth
             </div>
             <div class="col-start-6 col-span-2 grid grid-rows-3 gap-y-5">
                 <div class="row-span-2 grid">
