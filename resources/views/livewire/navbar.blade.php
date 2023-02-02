@@ -2,12 +2,12 @@
     class="z-30 fixed flex flex-wrap items-center justify-between w-[90%] left-[5%] py-4 px-4 text-lg text-gray-700 bg-transparent ease-in-out duration-500 rounded-md">
     <div class="flex items-center mr-6">
         <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20" alt="">
+            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-16 md:h-20" alt="">
         </a>
     </div>
 </div>
 <nav class="hidden md:block">
-    <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white drop-shadow-xl"
+    <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white drop-shadow-xl  md:h-screen"
         id="menu">
         <div class="grid grid-cols-5">
             <a href="/">
@@ -15,7 +15,7 @@
             </a>
         </div>
         <div class="mt-12 grid grid-cols-8 py-16 drop-shadow-xl">
-            <div class="grid gap-y-5 text-black col-start-2 col-span-3 text-[2.5vw]">
+            <div class="grid gap-y-5 text-black col-start-2 col-span-3 text-[2vw]">
                 <a class="block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
                 <div class="grid grid-cols-7 text-[1.5vw] text-center place-items-center">
                     <a class="block hover:text-red-400 col-start-3" href="coffee">COFFEE</a>
@@ -63,8 +63,9 @@
         </div>
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="z-50 w-6 cursor-pointer fixed right-[12vw] top-12"
-        fill="none" viewBox="0 0 24 24" stroke="#ff5700">
+    <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
+        class="z-50 md:w-[2vw] cursor-pointer fixed right-[12vw] top-12" fill="none" viewBox="0 0 24 24"
+        stroke="#ff5700">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
 
@@ -82,25 +83,39 @@
         </div>
     </div> -->
 
-    <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white"
+    <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white h-screen"
         id="menuMobile">
+        <div class="grid grid-cols-2">
         <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-4" alt="">
+            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-16 ml-4" alt="">
         </a>
-        <div class="mt-12 grid grid-cols-8 py-10">
-            <div class="grid grid-rows-4 text-black col-span-3 text-[7vw]">
-                <a class="p-4 py-2 block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
-                <div class="pl-10 grid grid-cols-5 text-[4vw] ptext-center place-items-center">
-                    <a class="block hover:text-red-400" href="coffee">COFFEE</a>
+        </div>
+        <div class="mt-12 grid grid-cols-12 py-10">
+            <div class="col-start-2 col-span-10 grid grid-rows-4 gap-y-8 text-black text-[7vw]">
+                <a class="block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
+                <div class="grid grid-cols-5 text-[4vw] text-center place-items-center">
+                    <a class="hover:text-red-400" href="coffee">COFFEE</a>
                     <p>/</p>
-                    <a class="block hover:text-red-400" href="bakery">BAKERY</a>
+                    <a class="hover:text-red-400" href="bakery">BAKERY</a>
                     <p>/</p>
-                    <a class="block hover:text-red-400" href="eatery">EATERY</a>
+                    <a class="hover:text-red-400" href="eatery">EATERY</a>
+
                 </div>
-                <a class="p-4 py-2 block hover:text-red-400" href="about-us">ABOUT US</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="contact">CONTACT</a>
-                <a class="p-4 py-2 block hover:text-red-400" href="membership">MEMBERSHIP</a>
+                <a class="block hover:text-red-400" href="about-us">ABOUT US</a>
+                <a class="block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
+                <a class="block hover:text-red-400" href="contact">CONTACT</a>
+                <a class="block hover:text-red-400" href="membership">MEMBERSHIP</a>
+                @auth
+                <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
+                @else
+                <div class="grid grid-cols-3 text-[4vw] text-center place-items-center">
+                    <a class="hover:text-red-400" href="/register">REGISTER</a>
+                    <p>/</p>
+                    <a class="hover:text-red-400" href="/login">LOGIN</a>
+                    <p></p>
+                    <p></p>
+                    @endauth
+                </div>
             </div>
         </div>
         <!-- <div class="grid grid-cols-12">
@@ -127,7 +142,7 @@
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" id="menuMobile-button"
-        class="z-50 w-6 cursor-pointer fixed right-[12vw] top-12" fill="none" viewBox="0 0 24 24" stroke="#ff5700">
+        class="z-50 w-[6vw] cursor-pointer fixed right-[12vw] top-12" fill="none" viewBox="0 0 24 24" stroke="#ff5700">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
 </nav>

@@ -89,6 +89,8 @@
     <p class="text-center py-5 text-[1.2vw]">© 2022 BVR Group Asia, Inc. All rights reserved.</p>
 </footer>
 
+
+
 <!-- MOBILE -->
 <footer class="block -z-10 pt-12 fixed bottom-0 w-full bg-white lg:hidden">
     <div class="grid grid-cols-12 container">
@@ -115,7 +117,7 @@
             <ul class="pt-3 space-y-1 text-neutral-400 text-[1.5vw]">
                 <!-- <li><a href="#" class="hover:text-neutral-200 ">Shop</a></li> -->
                 <li><a href="about-us" class="hover:text-neutral-200 ">About</a></li>
-                <!-- <li><a href="#" class="hover:text-neutral-200 ">FAQs</a></li> -->
+                <li><a href="coffeepedia" class="hover:text-neutral-200 ">Coffeepedia</a></li>
                 <li><a href="contact" class="hover:text-neutral-200 ">Contact</a></li>
             </ul>
         </div>
@@ -147,7 +149,7 @@
             <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}" class="w-[20vw] object-cover" alt="Gofood" />
         </div>
         <!--  -->
-        <div class="pr-5">
+        <div class="">
             <h5 class="font-semibold text-neutral-600 text-[2vw]">Subscribe to Our Newsletter</h5>
             <div class="pt-3 grid grid-rows-2 gap-2 text-[1.5vw]">
                 <input type="text" placeholder="Name" class="bg-neutral-200 w-full p-[1.5vw]">
@@ -159,7 +161,7 @@
             </div>
         </div>
         <div class="col-start-2 col-span-2">
-            <div class="row-start-5 grid grid-cols-8 place-items-center">
+            <div class="pt-6 grid grid-cols-8 place-items-center">
                 <img src="{{ asset('img/footer/bank-mandiri-logo-white-bg-1.webp') }}"
                     class="w-[10vw] object-cover col-span-2" alt="Mandiri" />
                 <img src="{{ asset('img/footer/2-100x100.webp') }}" class="w-[10vw] object-cover" alt="Shopee" />
