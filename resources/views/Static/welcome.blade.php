@@ -4,7 +4,6 @@
 @section('page_title', 'Home')
 
 @section('content')
-
     <header class="relative flex items-center justify-center h-screen overflow-hidden bg-black">
         <div class="relative z-30 grid md:grid-cols-6 text-white text-center">
             <div class="pt-20 md:pt-40 px-2 md:px-0 col-start-2 col-span-4">
