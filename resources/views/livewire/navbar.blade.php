@@ -2,7 +2,7 @@
     class="z-30 fixed flex flex-wrap items-center justify-between w-[90%] left-[5%] py-4 px-4 text-lg text-gray-700 bg-transparent ease-in-out duration-500 rounded-md">
     <div class="flex items-center mr-6">
         <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-16 md:h-20" alt="">
+            <img src="{{ asset('img/bcc-horizontal-blackfont.webp') }}" class="h-16 md:h-20" alt="">
         </a>
     </div>
 </div>
@@ -11,7 +11,7 @@
         id="menu">
         <div class="grid grid-cols-5">
             <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-4" alt="">
+                <img src="{{ asset('img/bcc-horizontal-blackfont.webp') }}" class="h-20 ml-4" alt="">
             </a>
         </div>
         <div class="mt-12 grid grid-cols-8 py-16 drop-shadow-xl">
@@ -29,10 +29,10 @@
                 <a class="block hover:text-red-400" href="contact">CONTACT</a>
                 <a class="block hover:text-red-400" href="membership">MEMBERSHIP</a>
                 @auth
-                <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
+                    <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
                 @else
-                <a class="block hover:text-red-400" href="/register">REGISTER</a>
-                <a class="block hover:text-red-400" href="/login">LOGIN</a>
+                    <a class="block hover:text-red-400" href="/register">REGISTER</a>
+                    <a class="block hover:text-red-400" href="/login">LOGIN</a>
                 @endauth
             </div>
             <div class="col-start-6 col-span-2 grid grid-rows-3 gap-y-5">
@@ -78,7 +78,7 @@
         class="z-30 fixed flex flex-wrap items-center justify-between w-[90%] left-[5%] py-4 px-4 text-lg text-gray-700 bg-transparent ease-in-out duration-500 rounded-md">
         <div class="flex items-center mr-6">
             <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-whitefont-1.webp')}}" class="h-16" alt="">
+                <img src="{{ asset('img/bcc-horizontal-whitefont-1.webp') }}" class="h-16" alt="">
             </a>
         </div>
     </div> -->
@@ -86,9 +86,9 @@
     <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white h-screen"
         id="menuMobile">
         <div class="grid grid-cols-2">
-        <a href="/">
-            <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-16 ml-4" alt="">
-        </a>
+            <a href="/">
+                <img src="{{ asset('img/bcc-horizontal-blackfont.webp') }}" class="h-16 ml-4" alt="">
+            </a>
         </div>
         <div class="mt-12 grid grid-cols-12 py-10">
             <div class="col-start-2 col-span-10 grid grid-rows-4 gap-y-8 text-black text-[7vw]">
@@ -104,20 +104,22 @@
                 <a class="block hover:text-red-400" href="about-us">ABOUT US</a>
                 <a class="block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
                 <a class="block hover:text-red-400" href="contact">CONTACT</a>
+                
                 <a class="block hover:text-red-400" href="membership">MEMBERSHIP</a>
                 @auth
-                <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
+                    <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
                 @else
-                <div class="grid grid-cols-3 text-[4vw] text-center place-items-center">
-                    <a class="hover:text-red-400" href="/register">REGISTER</a>
-                    <p>/</p>
-                    <a class="hover:text-red-400" href="/login">LOGIN</a>
-                    <p></p>
-                    <p></p>
+                    <div class="grid grid-cols-3 text-[4vw] text-center place-items-center">
+                        <a class="hover:text-red-400" href="/register">REGISTER</a>
+                        <p>/</p>
+                        <a class="hover:text-red-400" href="/login">LOGIN</a>
+                        <p></p>
+                        <p></p>
                     @endauth
                 </div>
             </div>
         </div>
+        
         <!-- <div class="grid grid-cols-12">
             <div class="col-start-3 col-span-4 grid grid-rows-3 gap-y-5">
                 <div class="">
@@ -142,7 +144,8 @@
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" id="menuMobile-button"
-        class="z-50 w-[6vw] cursor-pointer fixed right-[12vw] top-12" fill="none" viewBox="0 0 24 24" stroke="#ff5700">
+        class="z-50 w-[6vw] cursor-pointer fixed right-[12vw] top-12" fill="none" viewBox="0 0 24 24"
+        stroke="#ff5700">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
 </nav>
@@ -150,37 +153,37 @@
 <!--  -->
 
 <script>
-const button = document.querySelector('#menu-button');
-const menu = document.querySelector('#menu');
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
 
-button.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-});
+    button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
 
-// MOBILE
-const buttonMobile = document.querySelector('#menuMobile-button');
-const menuMobile = document.querySelector('#menuMobile');
+    // MOBILE
+    const buttonMobile = document.querySelector('#menuMobile-button');
+    const menuMobile = document.querySelector('#menuMobile');
 
-buttonMobile.addEventListener('click', () => {
-    menuMobile.classList.toggle('hidden');
-});
+    buttonMobile.addEventListener('click', () => {
+        menuMobile.classList.toggle('hidden');
+    });
 
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0px";
-        // document.getElementById("navbar").style.backgroundColor =  "rgba(55, 65, 81, 0.8)";
-    } else {
-        document.getElementById("navbar").style.top = "-100px";
-        // document.getElementById("navbar").style.backgroundColor =  "rgba(55, 65, 81, 0.8)";
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+            // document.getElementById("navbar").style.backgroundColor =  "rgba(55, 65, 81, 0.8)";
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+            // document.getElementById("navbar").style.backgroundColor =  "rgba(55, 65, 81, 0.8)";
+        }
+
+        //   if (window.pageYOffset == 0) {
+        //     document.getElementById("navbar").style.top = "0";
+        //     document.getElementById("navbar").style.backgroundColor = "transparent";
+        //   }
+        prevScrollpos = currentScrollPos;
     }
-
-    //   if (window.pageYOffset == 0) {
-    //     document.getElementById("navbar").style.top = "0";
-    //     document.getElementById("navbar").style.backgroundColor = "transparent";
-    //   }
-    prevScrollpos = currentScrollPos;
-}
 </script>

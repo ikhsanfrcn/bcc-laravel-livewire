@@ -1,108 +1,95 @@
-@extends('Layout.main')
-@section('page_title', 'Coffee')
-@section('meta_description', 'Bali Cofffee Club meta description coffee')
-@section('meta_keywords', 'Bali Cofffee Club meta keyword coffee')
+@extends('layout.main')
+@section('page_title', 'Bali Bakery')
+@section('meta_description', 'Bali Cofffee Club meta description about')
+@section('meta_keywords', 'Bali Cofffee Club meta keyword about')
 
 @section('content')
-
-<header class="flex items-center justify-center h-[75vh] bg-black px-5 md:px-14 lg:px-20">
-    <div class="grid grid-cols-12">
-        <div class="col-span-12">
-            <h1 class="text-white font-extrabold text-6xl tracking-tight">@yield('page_title')</h1>
-        </div>
+<header class="h-96 md:h-screen grid md:grid-cols-3 items-center bg-center bg-cover"
+    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.webp')}});">
+    <div class="md:col-start-2">
+        <img src="{{ asset('img/we-know-coffee-white-1.webp') }}" class="h-5 md:h-10 mx-auto" alt="We Know Coffee" />
+        <h1 class="pt-5 font-bold text-[12vw] md:text-[5vw] text-white text-center">
+            Eatery
+        </h1>
     </div>
 </header>
-
-<main class="bg-neutral-100 drop-shadow-xl grid gap-y-12">
-
-    <section class="">
-        <div class="container mx-auto text-center">
-            <div class="grid grid-rows-6 row-start-2">
-                <h1 class="row-start-2 font-semibold text-[2vw]">COFFEE</h1>
-                <hr class="row-start-3 w-[5vw] h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700">
-                <!-- </div> -->
-                <!-- <div class="py-12"> -->
-                <p class="row-start-4 row-span-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id
-                    lectus sapien. Fusce interdum
-                    felis eu risus semper varius. Maecenas sapien magna, lacinia gravida leo placerat, posuere facilisis
-                    quam. Fusce ut quam dignissim quam suscipit laoreet. Nam cursus felis ornare sapien ultrices
-                    consequat.
-                    Aliquam volutpat congue odio, ut hendrerit risus interdum eget. Sed cursus ligula nec magna aliquet
-                    suscipit. Donec nec nisi placerat, rhoncus augue malesuada, laoreet eros. Fusce vel volutpat urna.
-                    Lorem
-                    ipsum dolor sit amet, consectetur adipiscing elit.
-
-                    Sed ullamcorper aliquet congue. Cras at tortor eu turpis cursus semper. Suspendisse finibus lacinia
-                    justo ut egestas. Morbi odio massa, molestie vel lacus id, maximus tempor risus. Integer elementum,
-                    nibh
-                    nec vehicula ultricies, libero risus rutrum sem, a dignissim eros sapien a nibh. Proin libero leo,
-                    viverra sed suscipit in, sodales ac arcu. Praesent ac orci turpis. Nullam elementum convallis
-                    aliquam.
-                    Vestibulum bibendum orci quis elit gravida euismod sed nec ipsum. Nam velit elit, auctor suscipit
-                    posuere id, condimentum ac dui. Proin eros nulla, vulputate et condimentum et, gravida at ex.</p>
+    <main class="py-5 space-y-10 bg-white">
+        <section class="grid grid-cols-12 items-center gap-x-5 h-[50vh] md:h-screen">
+            <div class="col-span-6 hidden md:block">
+                <img src="{{ asset('img/bakery/bakery-intro.webp') }}" class="h-[36rem] w-full object-cover"
+                    alt="Bali Coffee Club Bakery">
             </div>
-        </div>
-    </section>
-
-    <section class="">
-        <div class="grid grid-cols-12 container mx-auto">
-            <!--  -->
-            <div class="col-span-3">
-                <p> We found <strong class="text-brand">123</strong> items for you! </p>
+            <div class="col-span-12 md:col-span-6 px-5 md:px-20">
+                <span class="text-neutral-500">Bali Coffee Club</span>
+                <h1 class="text-4xl tracking-tight font-bold">Eatery</h1>
+                <p class="leading-relaxed mt-4 text-neutral-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi suscipit
+                    reprehenderit tempore quis. Hic minima eveniet, sequi magnam maiores provident molestias similique ex,
+                    placeat eaque cumque quas ad sapiente nihil!</p>
+                <a href="#"
+                    class="block mt-4 w-fit px-5 py-3 bg-[#98694F] hover:bg-opacity-90 transition ease-in-out duration-300 rounded-md text-white font-bold">Discover
+                    Menu</a>
             </div>
-            <!--  -->
-            <div class="col-start-11 col-span-2">
-                <form>
-                    <div class="w-full">
-                        <label class="">Type</label>
-                        <div class="relative bg-white">
-                            <select id="type" name="coffee_type_id" class="appearance-none w-full bg-white"
-                                onchange='if(this.value != "") { this.form.submit(); }'>
-                                <option>Default</option>
-                                <option value="1">Bean</option>
-                                <option value="2">Hot</option>
-                                <option value="3">Ice</option>
-                            </select>
-                            <div
-                                class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700 border-l">
-                                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="px-5">
-                        <button type="submit" class="">Submit</button>
-                    </div> -->
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="p-5">
-        <div class="pt-10 grid md:grid-cols-3 container mx-auto gap-y-5 md:gap-y-10 gap-x-20">
-            @foreach ($coffees as $coffee)
-            <a href="#">
-                <div class="h-full w-full bg-black pt-64 pb-10 px-5 bg-cover bg-center" style="background-image:
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-            url('{{ $coffee->coffee_image }}');">
-                    <h3 class="text-white font-bold text-left text-2xl">{{ $coffee->coffee_name }}</h3>
+        </section>
+        <section class="grid grid-cols-12 px-5 md:px-12 lg:px-20 gap-x-5 gap-y-5 pb-20">
+            <div class="col-span-12">
+                <div>
+                    <h2 class="text-4xl font-bold tracking-tight">Best Bakery in Bali</h2>
+                    <p class="leading-relaxed w-full  md:w-3/5 block mt-4 mb-4 text-neutral-700">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Doloribus sequi ex, nisi, dolores saepe illum, enim blanditiis consequatur
+                        provident obcaecati modi dignissimos libero soluta asperiores aut fugit adipisci praesentium
+                        tempora.</p>
                 </div>
-            </a>
-            @endforeach
+            </div>
+            <div class="col-span-6 md:col-span-3 relative">
+                <img src="{{ asset('img/bakery/pain-au-chocolat.webp') }}"
+                    class="w-full h-96 object-cover rounded-md overflow-hidden hover:scale-90 transition ease-in-out duration-300"
+                    alt="Bali Coffee Club - Pain Au Chocolat">
+            </div>
+            <div class="col-span-6 md:col-span-3">
+                <img src="{{ asset('img/bakery/almond-croissant.webp') }}"
+                    class="w-full h-96 object-cover rounded-md overflow-hidden hover:scale-90 transition ease-in-out duration-300"
+                    alt="Bali Coffee Club - Almond Croissant">
+            </div>
+            <div class="col-span-6 md:col-span-3">
+                <img src="{{ asset('img/bakery/butter-croissant.webp') }}"
+                    class="w-full h-96 object-cover rounded-md overflow-hidden hover:scale-90 transition ease-in-out duration-300"
+                    alt="Bali Coffee Club - Butter Croissant">
+            </div>
+            <div class="col-span-6 md:col-span-3">
+                <img src="{{ asset('img/bakery/raisin-danish.webp') }}"
+                    class="w-full h-96 object-cover rounded-md overflow-hidden hover:scale-90 transition ease-in-out duration-300"
+                    alt="Bali Coffee Club - Raisin Danish">
+            </div>
+            <div class="col-span-6 md:col-span-3">
+                <img src="{{ asset('img/bakery/raisin-danish.webp') }}"
+                    class="w-full h-96 object-cover rounded-md overflow-hidden hover:scale-90 transition ease-in-out duration-300"
+                    alt="Bali Coffee Club - Raisin Danish">
+            </div>
+            <div class="col-span-6 md:col-span-3">
+                <img src="{{ asset('img/bakery/butter-croissant.webp') }}"
+                    class="w-full h-96 object-cover rounded-md overflow-hidden hover:scale-90 transition ease-in-out duration-300"
+                    alt="Bali Coffee Club - Butter Croissant">
+            </div>
+            <div class="col-span-6 md:col-span-3">
+                <img src="{{ asset('img/bakery/pain-au-chocolat.webp') }}"
+                    class="w-full h-96 object-cover rounded-md overflow-hidden hover:scale-90 transition ease-in-out duration-300"
+                    alt="Bali Coffee Club - Pain Au Chocolat">
+            </div>
+            <div class="col-span-6 md:col-span-3">
+                <img src="{{ asset('img/bakery/almond-croissant.webp') }}"
+                    class="w-full h-96 object-cover rounded-md overflow-hidden hover:scale-90 transition ease-in-out duration-300"
+                    alt="Bali Coffee Club - Almond Croissant">
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="w-full bg-black py-32 bg-cover bg-center"
+            style="background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.5)),
+        url('{{ asset('img/wholesale.webp') }}');">
+            <h3 class="text-center text-white font-bold text-4xl w-full md:w-3/4 mx-auto">We're also Available for Wholesale!</h3>
+            <a href="" class="block w-fit mx-auto mt-4 text-white font-bold">Contact Us!</a>
+        </section>
 
-    <section class="grid grid-cols-3 bg-neutral-100">
-        <img src="{{ asset('img/coffee/20230118---BCC-Menu-18.jpg') }}">
-        <img src="{{ asset('img/coffee/20230118---BCC-Menu-19.jpg') }}">
-        <img src="{{ asset('img/coffee/20230118---BCC-Menu-20.jpg') }}">
-    </section>
-</main>
-@endsection
-
-@section('script')
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    </main>
 @endsection

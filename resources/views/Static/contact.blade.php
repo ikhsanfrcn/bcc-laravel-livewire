@@ -4,22 +4,15 @@
 @section('meta_keywords', 'Bali Cofffee Club meta keyword contact')
 
 @section('content')
-<header class="h-96 md:h-screen bg-center bg-fixed bg-cover grid grid-rows-6 bg-black"
+<header class="h-96 md:h-screen grid md:grid-cols-3 items-center bg-center bg-cover"
     style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.webp')}});">
-    <!-- <div class="row-start-3 grid grid-cols-3">
-        <div class="col-start-2 text-white">
-            <img src="{{ asset('img/we-know-coffee-white-1.webp') }}" class="h-5 h-10 mx-auto" alt="We Know Coffee" />
-        </div>
-    </div> -->
-    <div class="row-start-3 grid grid-cols-6 md:grid-cols-4">
-        <div class="col-start-2 col-span-4 md:col-span-0  text-white">
-            <h6 class="pt-10 text-[4vw] md:text-[2vw]">Get in touch</h6>
-            <h1 class="text-[12vw] md:text-[7vw]">
-                Contact
-            </h1>
-        </div>
+    <div class="md:col-start-2">
+        <h1 class="pt-5 font-bold text-[12vw] md:text-[5vw] text-white text-center">
+            @yield('page_title')
+        </h1>
     </div>
 </header>
+
 
 <main class="h-screen bg-neutral-100 drop-shadow-2xl py-20">
 

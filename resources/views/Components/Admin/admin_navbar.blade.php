@@ -1,7 +1,10 @@
 <nav
     class="bg-white items-center grid grid-cols-12 px-5 md:px-12 lg:px-20 py-5 md:py-5 lg:py-5 border-b-2 border-b-gray-500/10">
     <div class="col-span-2">
-        <img src="{{ asset('img/bcc-horizontal-blackfont.webp') }}" class="w-36" alt="Bali Coffee Club">
+        <a href="/">
+
+            <img src="{{ asset('img/bcc-horizontal-blackfont.webp') }}" class="w-36" alt="Bali Coffee Club">
+        </a>
     </div>
     <div class="col-span-8 space-x-8 text-sm">
         <a href="/admin/dashboard"

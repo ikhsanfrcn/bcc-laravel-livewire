@@ -24,7 +24,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/', IndexController::class);
-Route::resource('/coffee', CoffeeController::class);
 Route::resource('/coffeepedia', PediaController::class);
 
 // Static Pages
@@ -33,6 +32,9 @@ Route::get('/about-us', function () {
 });
 Route::get('/bakery', function () {
     return view('Static.bakery');
+});
+Route::get('/coffee', function () {
+    return view('Static.coffee');
 });
 Route::get('/eatery', function () {
     return view('Static.eatery');
