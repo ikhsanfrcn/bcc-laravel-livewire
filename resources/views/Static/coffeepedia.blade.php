@@ -19,7 +19,7 @@
             <form action="" class="grid grid-cols-12 mb-4">
                 @csrf
                 <div class="col-span-12">
-                    <div class="ml-auto w-fit flex">
+                    <div class="ml-none md:ml-auto w-fit flex">
                         <input type="text" name="post_title" placeholder="Search" id=""
                             class="px-2 py-2 border-2 border-neutral-100 rounded-lg"
                             value="{{ isset($_GET['post_title']) ? $_GET['post_title'] : '' }}">
@@ -34,28 +34,18 @@
                     </div>
                 </div>
             </form>
-            <div class="grid grid-cols-12 gap-10">
+            <div class="grid grid-cols-12 gap-0 md:gap-10">
                 @foreach ($pedia as $post)
-                    <div
-                        class="col-span-6 flex items-center bg-white border-2 rounded-lg overflow-hidden border-neutral-100">
-                        <div class="w-2/5 h-full">
-                            <img src="{{ $post->post_image }}" alt="{{ $post->post_title }}"
-                                class="w-full h-full object-cover" />
-                        </div>
-                        <div class="w-3/5 px-2 py-4">
-                            <h3>
-                                <a href="javascript:void(0)"
-                                    class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                    {{ $post->post_title }}
-                                </a>
-                            </h3>
-                            <p class="text-body-color mb-7 text-sm leading-relaxed">
-                                {{ substr($post->post_content, 0, 200) }}
+                    <div class="col-span-12 md:col-span-6 block md:flex items-center bg-white border-1 drop-shadow-md border-neutral-200 rounded-md overflow-hidden">
+                        <img src="{{$post->post_image}}" title="{{$post->post_title}}" class="h-56 w-full object-cover" alt="{{$post->post_title}}">
+                        <div class="px-2 py-2">
+                            <div class="text-xl font-bold">
+                                {{$post->post_title}}
+                            </div>
+                            <p class="text-sm my-3 text-neutral-600 leading-relaxed">
+                                {{ Str::limit($post->post_content, 125) }}
                             </p>
-                            <a href="javascript:void(0)"
-                                class="text-body-color hover:border-primary hover:bg-primary inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-blue-400">
-                                View Details
-                            </a>
+                            <a href="/coffeepedia/{{$post->post_id}}" class="text-sm font-semibold">Read More</a>
                         </div>
                     </div>
                 @endforeach

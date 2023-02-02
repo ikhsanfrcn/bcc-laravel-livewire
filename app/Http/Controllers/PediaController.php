@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BlogpostModel as Blogpost;
 use Illuminate\Http\Request;
 use App\Models\Pedia;
+use Illuminate\Support\Facades\DB;
 
 class PediaController extends Controller
 {
@@ -16,5 +18,11 @@ class PediaController extends Controller
         });
 
         return view('Static.coffeepedia', ['pedia' => $pedia->paginate(10)]);
+    }
+
+    public function show($post_id)
+    {
+        $post = DB::table('post')->where('post_id', $post_id)->first();
+        return view('Static.blogpost-detail', ['post'=>$post]);
     }
 }
