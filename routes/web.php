@@ -7,6 +7,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CoffeeController;
+use App\Http\Controllers\PediaController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +24,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/', IndexController::class);
+Route::resource('/coffee', CoffeeController::class);
+Route::resource('/coffeepedia', PediaController::class);
 
 // Static Pages
 Route::get('/about-us', function () {
@@ -31,12 +36,6 @@ Route::get('/bakery', function () {
 });
 Route::get('/eatery', function () {
     return view('Static.eatery');
-});
-Route::get('/coffee', function () {
-    return view('Static.coffee');
-});
-Route::get('/coffeepedia', function () {
-    return view('Static.coffeepedia');
 });
 Route::get('/contact', function () {
     return view('Static.contact');

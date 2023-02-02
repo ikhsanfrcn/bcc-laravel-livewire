@@ -158,6 +158,7 @@
 
             </div>
         </section>
+
         @include('components.ctayt')
         @include('components.tripadvisor')
 
