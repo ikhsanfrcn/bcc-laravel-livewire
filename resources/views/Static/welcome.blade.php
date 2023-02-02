@@ -19,11 +19,11 @@
             </div>
         </div>
         <!-- <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
-                            <source
-                                src="https://balicoffeeclub.com/wp-content/uploads/2022/12/Bali-Coffee-Club_web2.webm"
-                                type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video> -->
+                                <source
+                                    src="https://balicoffeeclub.com/wp-content/uploads/2022/12/Bali-Coffee-Club_web2.webm"
+                                    type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video> -->
         <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none hidden md:block">
             <source src="{{ asset('video/Bali-Coffee-Club_web2.mp4') }}" type="video/mp4" />
             Your browser does not support the video tag.
@@ -65,20 +65,23 @@
                         <div class="grid grid-cols-2 place-items-center">
                             <img src="{{ asset('img/home/authen-icon-1.webp') }}" class="object-cover h-20 md:h-24 lg:h-28"
                                 alt="Authen" />
-                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">We source coffee from local Indonesian farmers who practice responsible
+                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">We source coffee from local Indonesian
+                                farmers who practice responsible
                                 growing
                                 techniques.</p>
                         </div>
                         <div class="grid grid-cols-2 place-items-center">
                             <img src="{{ asset('img/home/authen-icon-2.webp') }}" class="object-cover h-20 md:h-24 lg:h-28"
                                 alt="Authen" />
-                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">We roast our coffee in our world-class roastery nestled in the heart of Bali.
+                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">We roast our coffee in our world-class
+                                roastery nestled in the heart of Bali.
                             </p>
                         </div>
                         <div class="grid grid-cols-2 place-items-center">
                             <img src="{{ asset('img/home/authen-icon-3.webp') }}" class="object-cover h-20 md:h-24 lg:h-28"
                                 alt="Authen" />
-                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">Our finished product is packaged and shared out to our club members, locally
+                            <p class="text-[3.5vw] md:text-[1.5vw] lg:text-[1vw]">Our finished product is packaged and
+                                shared out to our club members, locally
                                 and
                                 around
                                 the globe.</p>
@@ -145,7 +148,7 @@
             </div>
             <div class="pt-10 grid md:grid-cols-3 container mx-auto gap-y-5 md:gap-y-0 gap-x-20">
                 @foreach ($posts as $post)
-                    <a href="#">
+                    <a href="/coffepedia/{{$post->post_id}}">
                         <div class="w-full bg-black pt-64 pb-10 px-5 bg-cover bg-center"
                             style="background-image:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
@@ -159,44 +162,8 @@
         </section>
         @include('components.ctayt')
         @include('components.tripadvisor')
-
-
-
-        <!-- OUR RECOMMENDATIONS -->
-        <!-- <section class="py-20 px-5"
-                                style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://balicoffeeclub.com/wp-content/uploads/2022/05/balinesse-dancer.webp');">
-                                <h1 class="text-4xl text-center font-bold text-white">Our Recommendations</h1>
-                                <div class="grid grid-cols-4">
-
-                                </div>
-                            </section> -->
-
-        <!-- <section class="pt-32 grid md:grid-cols-12">
-                                <div class="bg-gray-100 md:col-span-5 md:hidden">
-                                    <img src="" class="h-full" alt="test">
-                                    </img>
-                                </div>
-                                <div class="text-center grid col-span-7 grid-cols-7">
-                                    <div class="col-start-3 col-span-3 py-52">
-                                        <h3 class="text-[3vw] font-semibold">" Helix - Spiral "</h3>
-                                        <p class="pt-12 text-md text-left">Our missions are to continuously update production of creative, like
-                                            the
-                                            spiral
-                                            structure which keeps going up infinitely without passing the same position twice, and to create
-                                            businesses which can advance brands and society further.</p>
-                                    </div>
-                                </div>
-                                <div class="bg-gray-100 md:col-span-5 hidden md:block">
-                                    <img src="" class="h-full" alt="test">
-                                    </img>
-                                </div>
-                            </section> -->
         </div>
     </main>
-    <!-- <div class="grid grid-cols-12" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0)">
-                            <div class="py-36 col-start-12"
-                                style="background-image:  linear-gradient(to bottom, rgba(243, 244, 246, 1), rgba(0, 0, 0, 0));"></div>
-                        </div> -->
 @endsection
 
 @section('script')
