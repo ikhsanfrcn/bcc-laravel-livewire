@@ -1,6 +1,9 @@
 @extends('Layout.admin')
 @section('page_title', 'Blogpost')
-
+@section('head-section')
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+@endsection
 @section('page_content')
     <section class="px-5 md:px-12 lg:px-20 py-5 flex items-center justify-between">
         <div class="bg-white rounded-lg">
@@ -55,7 +58,8 @@
                     <h3 class="text-dark pb-2 text-xl font-bold sm:text-2xl">
                         Create a New Blogpost
                     </h3>
-                    <form action="{{ route('blogpost.store') }}" method="POST" class="my-5 grid grid-cols-12 gap-5" enctype="multipart/form-data">
+                    <form action="{{ route('blogpost.store') }}" method="POST" class="my-5 grid grid-cols-12 gap-5"
+                        enctype="multipart/form-data">
                         @csrf
                         <div class="col-span-4">
                             <label for="" class=" text-neutral-800">Blogpost Title</label>
@@ -73,11 +77,13 @@
                             <textarea type="text" name="post_meta_description" class="w-full bg-gray-50 focus:bg-white px-2 py-2 rounded-md"></textarea>
                         </div>
 
-                        <div class="col-span-8">
+                        <div class="col-span-12">
                             <label for="" class=" text-neutral-800">Post Content</label>
-                            <textarea type="text" name="post_content" class="h-full w-full bg-gray-50 focus:bg-white px-2 py-2 rounded-md"></textarea>
+                            <input id="post_content" class="h-96 w-full bg-gray-50 focus:bg-white px-2 py-2 rounded-md"
+                                type="hidden" name="post_content">
+                            <trix-editor input="post_content"></trix-editor>
                         </div>
-                        <div class="col-span-4">
+                        <div class="col-span-6">
                             <label for="" class=" text-neutral-800">Blogpost Image</label>
                             <input type="text" name='post_image'
                                 class="w-full bg-gray-50 focus:bg-white px-2 py-2 rounded-md mb-4">
@@ -137,19 +143,29 @@
                         {{ $bp->post_title }}
                     </p>
                     <p class="text-xs mb-3">
-                        {{ Str::limit($bp->post_content, 150) }}
+                        {!! Str::limit($bp->post_content, 150) !!}
                     </p>
                     <p class="text-gray-400 font-bold text-xs text-left mb-2">Actions</p>
-                    <form action="/admin/blogpost/{{$bp->post_id}}" method="POST">
+                    
+                    <form action="/admin/blogpost/{{ $bp->post_id }}" method="POST">
+                        <button
+                            class="text-black hover:bg-white inline-flex items-center justify-center rounded-md text-center text-xs transition hover:text-blue-500 mr-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                              </svg>                              
+                            Update
+                        </button>
                         @method('delete')
                         @csrf
-                        <button class="text-black hover:bg-white inline-flex items-center justify-center rounded-md text-center text-xs transition hover:text-red-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-4 h-4 mr-1">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                        </svg>
-                        Delete</button>
+                        <button
+                            class="text-black hover:bg-white inline-flex items-center justify-center rounded-md text-center text-xs transition hover:text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                            </svg>
+                            Delete
+                        </button>
                     </form>
                 </div>
             </div>

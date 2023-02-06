@@ -19,6 +19,7 @@
             font-family: 'Montserrat', sans-serif !important;
         }
     </style>
+    @yield('head-section')
     <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/6l7fp7dzfs6n7ria7v22e68z1frwo2500uwixn1rrdsdy6f9/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>

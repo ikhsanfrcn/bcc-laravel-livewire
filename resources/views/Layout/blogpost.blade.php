@@ -24,7 +24,6 @@
 </head>
 
 <body>
-
     @yield('content')
     @livewire('footer')
 </body>

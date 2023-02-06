@@ -19,11 +19,11 @@
             </div>
         </div>
         <!-- <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
-                                <source
-                                    src="https://balicoffeeclub.com/wp-content/uploads/2022/12/Bali-Coffee-Club_web2.webm"
-                                    type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video> -->
+                                    <source
+                                        src="https://balicoffeeclub.com/wp-content/uploads/2022/12/Bali-Coffee-Club_web2.webm"
+                                        type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video> -->
         <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none hidden md:block">
             <source src="{{ asset('video/Bali-Coffee-Club_web2.mp4') }}" type="video/mp4" />
             Your browser does not support the video tag.
@@ -148,7 +148,7 @@
             </div>
             <div class="pt-10 grid md:grid-cols-3 container mx-auto gap-y-5 md:gap-y-0 gap-x-20">
                 @foreach ($posts as $post)
-                    <a href="/coffepedia/{{$post->post_id}}">
+                    <a href="/coffeepedia/{{ $post->post_id }}">
                         <div class="w-full bg-black pt-64 pb-10 px-5 bg-cover bg-center"
                             style="background-image:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
@@ -162,7 +162,9 @@
         </section>
 
         @include('components.ctayt')
+        {{--         
         @include('components.tripadvisor')
+         --}}
         </div>
     </main>
 @endsection

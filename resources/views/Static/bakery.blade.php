@@ -15,29 +15,48 @@
             </div>
         </div>
     </header>
-    <main class="py-5 space-y-10 bg-white">
-        <section class="grid grid-cols-12 items-center gap-x-5 h-[50vh] md:h-screen">
-            <div class="col-span-5 hidden md:block">
-                <img src="{{ asset('img/bakery/bakery-intro.webp') }}" class="h-[36rem] w-full object-cover"
-                    alt="Bali Coffee Club Bakery">
-            </div>
-            <div class="col-span-12 md:col-span-7 px-5 md:px-20">
-                <span class="text-neutral-500">Bali Coffee Club</span>
-                <h2 class="text-4xl tracking-tight font-bold">Bali Bakery</h2>
-                <p class="leading-relaxed mt-4 text-neutral-700">
-                    Savor the flavors of the best croissants in Bali at the Bali Coffee Club. Treat yourself to the freshest
-                    and healthiest ingredients baked with love in the Balinese way. Our bakery is not just known for its
-                    delicious treats, but also as a healthy bakery shop. We believe that indulging in your favorite sweets
-                    doesn’t have to come at the cost of your well-being. Therefore, we offer a range of various bakery that
-                    are just as delicious as they are nutritious. Experience the best bakery in Bali, where your taste and
-                    wellness is a match. Visit us today and treat yourself at the best bakery in Bali only at Bali Coffee
-                    Club.
+    <main class="space-y-20 bg-white py-5 md:pt-20 md:pb-32">
+        <section class="grid grid-cols-12 gap-y-5 ">
+            <div class="col-span-12 w-3/5 mx-auto">
+                <h2 class="font-bold text-4xl tracking-tight">Fresh from The Oven,<br />A gateway to savor the taste of Heaven </h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed">
+                    Savor the flavors of the best croissants in Bali only at the Bali Coffee Club. Treat yourself to the freshest ingredients baked with love with the sense of Balinese culture. Our bakery is not just known for its delicious treats, but also as a healthy bakery shop. We believe that indulging in your favorite sweets doesn’t have to come at the cost of your well-being. Therefore, we offer a range of various bakery that are just as delicious as they are nutritious. Experience the best bakery in Bali, where the taste and  is a match. Visit us today and treat yourself at the best bakery in Bali only at Bali Coffee Club.
                 </p>
-                <a href="#"
-                    class="block mt-4 w-fit px-5 py-3 bg-[#98694F] hover:bg-opacity-90 transition ease-in-out duration-300 rounded-md text-white font-bold">Discover
-                    Menu</a>
+            </div>
+            <div class="col-span-12">
+                <img src="{{ asset('img/bakery/bakery-intro.webp') }}"
+                    class="drop-shadow-md w-4/5 mx-auto h-56 object-cover rounded-lg" alt="Bali Coffee Club">
             </div>
         </section>
-
+        <section class="grid grid-cols-12 gap-x-5 w-4/5 mx-auto items-center">
+            <div class="col-span-8">
+                <div class="text-neutral-400 font-semibold">
+                    Our Products
+                </div>
+                <h2 class="font-bold text-4xl tracking-tight">
+                    Bakery and Pastry
+                </h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed">
+                    Indulge your day with the salty and tasty bakery products for breakfast, and the sweetness of freshly baked pastry only at Bali Coffee Club. From croissants to moist cakes, our products are made with love, therefore we only choose the finest ingredients to be processed. Crafted to perfection by our skilled bakers at the best bakery in Bali. Savor every bite and experience the delightful flavors and textures that can indulge your tongue. Treat yourself or share with others, either way, our pastries and bakery items are sure to please.
+                </p>
+            </div>
+            <div class="col-span-4">
+                <img src="{{ asset('img/bakery/almond-croissant.webp') }}"
+                    class="h-96 rounded-lg drop-shadow-md object-cover w-full" alt="">
+            </div>
+        </section>
+        <section class="grid grid-cols-12 gap-x-5 w-4/5 mx-auto items-center">
+            <div class="col-span-12">
+                <div class="text-neutral-400 font-semibold text-center">
+                    Our Service
+                </div>
+                <h2 class="font-bold text-4xl tracking-tight text-center">
+                    From Retail to Wholesale
+                </h2>
+                <p class="text-center text-neutral-600 mt-4 leading-relaxed pl-20">
+                    We offer a wide range of premium bakery products, from retail to wholesale, to cater to all your needs. Whether you're a coffee connoisseur or a pastry lover, our carefully curated menu of freshly baked items and aromatic coffee won’t disappoint you. With our commitment to using only the finest ingredients, our products are ready to satisfy even the most discerning palates. Join the club and savor the flavor only at the best bakery in Bali!
+                </p>
+            </div>
+        </section>
     </main>
 @endsection

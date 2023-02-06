@@ -43,7 +43,7 @@
                                 {{$post->post_title}}
                             </div>
                             <p class="text-sm my-3 text-neutral-600 leading-relaxed">
-                                {{ Str::limit($post->post_content, 125) }}
+                                {!! Str::limit($post->post_content, 125) !!}
                             </p>
                             <a href="/coffeepedia/{{$post->post_id}}" class="text-sm font-semibold">Read More</a>
                         </div>
