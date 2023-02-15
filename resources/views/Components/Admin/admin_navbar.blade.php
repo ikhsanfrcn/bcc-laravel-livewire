@@ -16,8 +16,6 @@
             Management</a>
         <a href="/admin/subscriber"
             class="{{ request()->is('admin/subscriber') ? 'text-black' : 'text-neutral-500' }} hover:text-black transition ease-in-out duration-300">Subscribers</a>
-        <a href="/admin/products"
-            class="{{ request()->is('admin/subscriber') ? 'text-black' : 'text-neutral-500' }} hover:text-black transition ease-in-out duration-300">Products</a>
     </div>
     <div class="col-span-2 text-sm">
         @auth
@@ -27,7 +25,7 @@
             <span class="text-xs text-neutral-500">
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf
-                    <button type="submit">Logout</button>
+                    <button type="submit" class="py-2">Logout</button>
                 </form>
             </span>
         @endauth

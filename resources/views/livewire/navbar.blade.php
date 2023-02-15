@@ -17,22 +17,16 @@
         <div class="mt-12 grid grid-cols-8 py-16 drop-shadow-xl">
             <div class="grid gap-y-5 text-black col-start-2 col-span-3 text-[2vw]">
                 <a class="block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
-                <div class="grid grid-cols-7 text-[1.5vw] text-center place-items-center">
-                    <a class="block hover:text-red-400 col-start-3" href="coffee">COFFEE</a>
-                    <p>/</p>
-                    <a class="block hover:text-red-400" href="bakery">BAKERY</a>
-                    <p>/</p>
-                    <a class="block hover:text-red-400" href="eatery">EATERY</a>
-                </div>
                 <a class="block hover:text-red-400" href="about-us">ABOUT US</a>
+                <a class="block hover:text-red-400 focus-within:text-black" href="/coffee">COFFEE</a>
+                <a class="block hover:text-red-400 focus-within:text-black" href="/pastry">PASTRY</a>
+                <a class="block hover:text-red-400 focus-within:text-black" href="/eatery">EATERY</a>
                 <a class="block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
                 <a class="block hover:text-red-400" href="contact">CONTACT</a>
-                <a class="block hover:text-red-400" href="membership">MEMBERSHIP</a>
                 @auth
                     <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
                 @else
-                    <a class="block hover:text-red-400" href="/register">REGISTER</a>
-                    <a class="block hover:text-red-400" href="/login">LOGIN</a>
+                    <a class="block hover:text-red-400" href="/membership">MEMBERSHIP</a>
                 @endauth
             </div>
             <div class="col-start-6 col-span-2 grid grid-rows-3 gap-y-5">
@@ -74,16 +68,7 @@
 <!-- MOBILE -->
 
 <nav class="block md:hidden">
-    <!-- <div id="navbar"
-        class="z-30 fixed flex flex-wrap items-center justify-between w-[90%] left-[5%] py-4 px-4 text-lg text-gray-700 bg-transparent ease-in-out duration-500 rounded-md">
-        <div class="flex items-center mr-6">
-            <a href="/">
-                <img src="{{ asset('img/bcc-horizontal-whitefont-1.webp') }}" class="h-16" alt="">
-            </a>
-        </div>
-    </div> -->
-
-    <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white h-screen"
+    <div class="z-40 fixed hidden w-full items-center justify-between pl-[5%] py-4 px-4 ease-in-out duration-1000 bg-white h-screen overflow-y-auto"
         id="menuMobile">
         <div class="grid grid-cols-2">
             <a href="/">
@@ -93,53 +78,19 @@
         <div class="mt-12 grid grid-cols-12 py-10">
             <div class="col-start-2 col-span-10 grid grid-rows-4 gap-y-8 text-black text-[7vw]">
                 <a class="block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
-                <div class="grid grid-cols-5 text-[4vw] text-center place-items-center">
-                    <a class="hover:text-red-400" href="coffee">COFFEE</a>
-                    <p>/</p>
-                    <a class="hover:text-red-400" href="bakery">BAKERY</a>
-                    <p>/</p>
-                    <a class="hover:text-red-400" href="eatery">EATERY</a>
-
-                </div>
-                <a class="block hover:text-red-400" href="about-us">ABOUT US</a>
-                <a class="block hover:text-red-400" href="coffeepedia">COFFEEPEDIA</a>
-                <a class="block hover:text-red-400" href="contact">CONTACT</a>
-                
-                <a class="block hover:text-red-400" href="membership">MEMBERSHIP</a>
+                <a class="block hover:text-red-400" href="/about-us">ABOUT US</a>
+                <a class="block hover:text-red-400 focus-within:text-black" href="/coffee">COFFEE</a>
+                <a class="block hover:text-red-400 focus-within:text-black" href="/pastry">PASTRY</a>
+                <a class="block hover:text-red-400 focus-within:text-black" href="/eatery">EATERY</a>
+                <a class="block hover:text-red-400" href="/coffeepedia">COFFEEPEDIA</a>
+                <a class="block hover:text-red-400" href="/contact">CONTACT</a>
                 @auth
                     <a class="block hover:text-red-400" href="/admin/dashboard">DASHBOARD</a>
                 @else
-                    <div class="grid grid-cols-3 text-[4vw] text-center place-items-center">
-                        <a class="hover:text-red-400" href="/register">REGISTER</a>
-                        <p>/</p>
-                        <a class="hover:text-red-400" href="/login">LOGIN</a>
-                        <p></p>
-                        <p></p>
-                    @endauth
-                </div>
+                    <a class="block hover:text-red-400" href="/membership">MEMBERSHIP</a>
+                @endauth
             </div>
         </div>
-        
-        <!-- <div class="grid grid-cols-12">
-            <div class="col-start-3 col-span-4 grid grid-rows-3 gap-y-5">
-                <div class="">
-                    <h6 class="text-gray-300">Address</h6>
-                    <p class="text-sm">
-                        Gg. Meduri Lingkungan Taman Mertanadi No.5, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung,
-                        Bali
-                        80361
-                    </p>
-                </div>
-                <div class="">
-                    <h6 class="text-gray-300">Phone</h6>
-                    <p class="text-sm">
-                        +62 XXXX
-                    </p>
-                    <h6 class="pt-5 text-gray-300">Enquiries</h6>
-                    <p class="text-sm">
-                        admin@balicoffeeclub.com
-                </div>
-            </div> -->
     </div>
     </div>
 

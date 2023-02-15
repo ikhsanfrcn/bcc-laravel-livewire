@@ -3,42 +3,78 @@
 @section('meta_description', 'Bali Cofffee Club meta contact')
 @section('meta_keywords', 'Bali Cofffee Club meta keyword contact')
 
+@section('additional-styling')
+
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+
+@endsection
+
 @section('content')
 
-<header class="h-96 md:h-screen grid md:grid-cols-3 items-center bg-center bg-cover"
-    style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.webp')}});">
-    <div class="md:col-start-2">
-        <img src="{{ asset('img/we-know-coffee-white-1.webp') }}" class="h-5 md:h-10 mx-auto" alt="We Know Coffee" />
-        <h1 class="pt-5 font-bold text-[12vw] md:text-[5vw] text-white text-center">
-            Membership
-        </h1>
-    </div>
-</header>
-
-<main class="bg-neutral-100 drop-shadow-xl">
-    <section class="h-screen grid grid-cols-12 grid-rows-6 container mx-auto">
-        <div class="col-start-2 col-span-10 row-start-2 md:row-start-3">
-            <div class="grid gap-y-10">
-                <h3 class="text-[5vw] md:text-[2vw] font-semibold">Register as our Memberships</h3>
-                <div class="grid md:grid-cols-2 gap-y-5 md:gap-x-10">
-                    <!-- <div>
-                    <input type="text" class="bg-neutral-200 py-3 px-5 w-full" placeholder="Name">
-                    </div>
-                    <div>
-                    <input type="text" class="bg-neutral-200 py-3 px-5 w-full" placeholder="Phone Number">
-                    </div>
-                    <div class="md:col-span-2">
-                    <input type="text" class="bg-neutral-200 py-3 px-5 w-full" placeholder="Phone Number">
-                    </div> -->
-                    <input type="text" class="bg-neutral-200 py-3 px-5 w-full" placeholder="Name">
-                    <input type="text" class="bg-neutral-200 py-3 px-5 w-full" placeholder="Phone Number">
-                    <input type="text" class="bg-neutral-200 py-3 px-5 w-full md:col-span-2" placeholder="Phone Number">
-                </div>
-                <div class="grid md:grid-cols-12">
-                    <button class="md:col-start-12 bg-[#ff5700] py-3 text-white">Register</button>
-                </div>
-            </div>
+    <header class="h-96 md:h-screen grid md:grid-cols-3 items-center bg-center bg-cover"
+        style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url({{ asset('img/about/aboutbg.webp') }});">
+        <div class="md:col-start-2">
+            <img src="{{ asset('img/we-know-coffee-white-1.webp') }}" class="h-5 md:h-10 mx-auto" alt="We Know Coffee" />
+            <h1 class="pt-5 font-bold text-[12vw] md:text-[5vw] text-white text-center">
+                Membership
+            </h1>
         </div>
-    </section>
-</main>
+    </header>
+
+    <main class="bg-neutral-100 drop-shadow-xl">
+        <section class="grid grid-cols-12 py-5 md:py-10 lg:py-20">
+            <div class="col-span-6 px-5 md:px-12 lg:px-20 py-20">
+                @if ($errors->any())
+                    <div
+                        class="flex w-full mx-auto rounded-lg border-l-[6px] border-[#F87171] bg-[#F87171] bg-opacity-[15%] px-7 py-8 shadow-md md:p-9">
+                        <div class="mr-5 flex h-9 w-full max-w-[36px] items-center justify-center rounded-lg bg-[#F87171]">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.4917 7.65579L11.106 12.2645C11.2545 12.4128 11.4715 12.5 11.6738 12.5C11.8762 12.5 12.0931 12.4128 12.2416 12.2645C12.5621 11.9445 12.5623 11.4317 12.2423 11.1114C12.2422 11.1113 12.2422 11.1113 12.2422 11.1113C12.242 11.1111 12.2418 11.1109 12.2416 11.1107L7.64539 6.50351L12.2589 1.91221L12.2595 1.91158C12.5802 1.59132 12.5802 1.07805 12.2595 0.757793C11.9393 0.437994 11.4268 0.437869 11.1064 0.757418C11.1063 0.757543 11.1062 0.757668 11.106 0.757793L6.49234 5.34931L1.89459 0.740581L1.89396 0.739942C1.57364 0.420019 1.0608 0.420019 0.740487 0.739944C0.42005 1.05999 0.419837 1.57279 0.73985 1.89309L6.4917 7.65579ZM6.4917 7.65579L1.89459 12.2639L1.89395 12.2645C1.74546 12.4128 1.52854 12.5 1.32616 12.5C1.12377 12.5 0.906853 12.4128 0.758361 12.2645L1.1117 11.9108L0.758358 12.2645C0.437984 11.9445 0.437708 11.4319 0.757539 11.1116C0.757812 11.1113 0.758086 11.111 0.75836 11.1107L5.33864 6.50287L0.740487 1.89373L6.4917 7.65579Z"
+                                    fill="#ffffff" stroke="#ffffff"></path>
+                            </svg>
+                        </div>
+                        <div class="w-full">
+                            <h5 class="mb-3 text-base font-semibold text-[#B45454]">
+                                There were some errors with your submission
+                            </h5>
+                            <ul class="list-inside list-disc">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+
+                @endif
+                <form action="{{ route('membership.store') }}" method="POST" class="space-y-3">
+                    @csrf
+                    <input type="text" class="bg-neutral-200 py-3 px-5 w-full rounded-md" name="name"
+                        placeholder="Name">
+                    <input type="email" class="bg-neutral-200 py-3 px-5 w-full rounded-md" name="email"
+                        placeholder="Email">
+                    <input type="number"class="bg-neutral-200 py-3 px-5 w-full rounded-md" name="phone_number"
+                        id="" placeholder="Phone Number">
+                    <button class="md:col-start-12 bg-[#ff5700] py-3 text-white w-full rounded-md" type="submit">Become a
+                        Subscriber!</button>
+                </form>
+            </div>
+            <div class="col-span-6 bg-cover bg-center" style="background-image: url('{{ asset('img/bcc-1.webp') }}')">
+
+            </div>
+        </section>
+    </main>
 @endsection

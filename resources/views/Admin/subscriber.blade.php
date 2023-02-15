@@ -19,11 +19,14 @@
             Phone Number
         </div>
         @foreach ($subscriber as $subs)
-            <div class="col-span-6 px-2 py-2 text-neutral-600">
+            <div class="col-span-4 px-2 py-2 text-neutral-600">
                 {{ $subs->name }}
             </div>
-            <div class="col-span-6 px-2 py-2 text-sm text-neutral-600">
+            <div class="col-span-4 px-2 py-2 text-sm text-neutral-600">
                 {{ $subs->email }}
+            </div>
+            <div class="col-span-4 px-2 py-2 text-sm text-neutral-600">
+                {{ $subs->phone_number }}
             </div>
         @endforeach
         

@@ -1,5 +1,5 @@
 @section('meta_description', 'Bali Cofffee Club meta description home')
-@section('meta_keywords', 'Bali Cofffee Club meta keyword home')
+@section('meta_keywords', 'Eatery in Bali, Pastry Shop in Bali, Bali Coffee Club')
 @extends('layout.main')
 @section('page_title', 'Home')
 
@@ -13,7 +13,7 @@
                 <p class="pt-5 md:pt-10 text-sm md:px-32">World class coffee, grown and roasted in Bali, it is the perfect
                     way to start
                     any day.
-                    Bring the energy of Bali into your morning with every cup of Bali Coffee Clubs.</p>
+                    Bring the energy of Bali into your morning with every cup of Bali Coffee Club.</p>
                 <img src="{{ asset('img/home/output-onlinepngtools.webp') }}" class="pt-10 h-24 md:h-32 mx-auto"
                     alt="We Know Coffee" />
             </div>
