@@ -1,7 +1,7 @@
 @extends('Layout.main')
 @section('page_title', 'About Us')
 @section('meta_description', 'Bali Cofffee Club meta description about')
-@section('meta_keywords', 'Bali Cofffee Club meta keyword about')
+@section('meta_keywords', 'Coffee Club in Canggu, Eatery in Bali, Best Pastry in Bali')
 
 @section('content')
 <header class="h-96 md:h-screen grid md:grid-cols-3 items-center bg-center bg-cover"

@@ -11,30 +11,26 @@
     <div class="pt-[2vw] grid grid-cols-5 gap-x-[1vw] container mx-auto px-[2vw]">
         <div class="col-span-2">
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">About Bali Coffe Club</h5>
-            <p class="py-2 text-[0.8vw] font-light w-full md:w-3/4 text-justify">We prize quality above all else. The
-                coffee plant is an incredible
-                asset to our
-                world, and the
-                conditions for growing coffee are unique and special. We are dedicated to being good stewards of
+            <p class="py-2 text-[1vw] font-light w-full md:w-3/4 text-justify">We prize quality above all else. The
+                coffee plant is an incredible asset to our world, and the conditions for growing coffee are unique and special. We are dedicated to being good stewards of
                 these gifts by seeing to it that quality is delivered in every cup of BCC coffee.</p>
-            <a href="" class="text-[0.8vw] font-semibold text-neutral-600">Learn More</a>
+            <a href="/about-us" class="text-[0.8vw] font-semibold text-neutral-600">Learn More</a>
         </div>
         <div class="col-start-3">
-            <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Usefull Links</h5>
+            <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Useful Links</h5>
             <ul class="pt-3 space-y-1 text-neutral-400 text-[1vw]">
-                <!-- <li><a href="#" class="hover:text-neutral-200 ">Shop</a></li> -->
-                <li><a href="about-us" class="hover:text-neutral-200 ">About</a></li>
-                <!-- <li><a href="#" class="hover:text-neutral-200 ">FAQs</a></li> -->
-                <li><a href="contact" class="hover:text-neutral-200 ">Contact</a></li>
+                <li><a href="/about-us" class="hover:text-neutral-800">About</a></li>
+                <li><a href="/coffee" class="hover:text-neutral-800">Coffee</a></li>
+                <li><a href="/pastry" class="hover:text-neutral-800">Pastry</a></li>
+                <li><a href="/eatery" class="hover:text-neutral-800">Eatery</a></li>
+                <li><a href="/contact" class="hover:text-neutral-800">Contact</a></li>
             </ul>
         </div>
         <div>
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Connect with Us</h5>
             <ul class="pt-3 space-y-1 text-neutral-400 text-[1vw]">
-                <li><a href="#" class="hover:text-neutral-200 ">Facebook</a></li>
-                <li><a href="#" class="hover:text-neutral-200 ">Instagram</a></li>
-                <li><a href="#" class="hover:text-neutral-200 ">Tiktok</a></li>
-                <!-- <li><a href="#" class="hover:text-neutral-200 ">LINK</a></li> -->
+                <li><a href="https://www.instagram.com/balicoffeeclub/" class="hover:text-neutral-800 ">Instagram</a></li>
+                <li><a href="https://www.facebook.com/bvrbalicoffeeclub" class="hover:text-neutral-800 ">Facebook</a></li>
             </ul>
         </div>
         <div>

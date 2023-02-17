@@ -8,6 +8,8 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CoffeeController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\UserSubscriberController;
 use App\Http\Controllers\PediaController;
 
 use Illuminate\Support\Facades\Route;
@@ -30,8 +32,8 @@ Route::resource('/coffeepedia', PediaController::class);
 Route::get('/about-us', function () {
     return view('Static.about');
 });
-Route::get('/bakery', function () {
-    return view('Static.bakery');
+Route::get('/pastry', function () {
+    return view('Static.pastry');
 });
 Route::get('/coffee', function () {
     return view('Static.coffee');
@@ -39,18 +41,15 @@ Route::get('/coffee', function () {
 Route::get('/eatery', function () {
     return view('Static.eatery');
 });
-Route::get('/contact', function () {
-    return view('Static.contact');
-});
-Route::get('/membership', function () {
-    return view('Static.membership');
-});
 
 Route::get('/register', function () {
     return view('Auth.register');
 });
 
-Route::resource('/coffeepedia',PediaController::class);
+
+Route::resource('/coffeepedia', PediaController::class);
+Route::resource('/membership', UserSubscriberController::class);
+Route::resource('/contact', ContactController::class);
 
 // Login Route
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
@@ -64,4 +63,15 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::resource('/user', UserController::class);
     Route::resource('/subscriber', SubscriberController::class);
     Route::resource('/products', ProductController::class);
+});
+
+// Promotion Links
+Route::get('/promotion', function () {
+    return view('Static.linktree');
+});
+Route::get('/promotion/bcc-canggu-sunset', function () {
+    return view('Static.bcc-canggu-linktree');
+});
+Route::get('/promotion/bcc-jakarta', function () {
+    return view('Static.bcc-jakarta-linktree');
 });
