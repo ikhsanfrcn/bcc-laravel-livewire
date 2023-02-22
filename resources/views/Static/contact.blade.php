@@ -30,7 +30,7 @@
                     you may have. Whether it's regarding a product or service, or if you just have a general inquiry, we are
                     eager to hear from you.
                     Please fill out the form below with your information, including a brief description of what you would
-                    like to discuss. Our team will get back to you as soon as possible, usually within 24-48 hours.
+                    like to discuss. Our team will get back to you as soon as possible.
                 </div>
                 @if ($errors->any())
                     <div
