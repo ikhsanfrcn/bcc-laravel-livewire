@@ -90,7 +90,7 @@
         </section>
         <section class="grid grid-cols-12 px-5 md:px-12 lg:px-20 gap-x-0 gap-y-5 md:gap-x-10">
             <div
-                class="col-span-12 md:col-span-6 lg:col-span-4 border-2 rounded-md drop-shadow-md bg-white border-t-blue-600">
+                class="col-span-12 md:col-span-6 lg:col-span-4 border-2 rounded-md drop-shadow-md bg-white border-t-[#ff5700]">
                 <img src="{{ asset('img/bcc-1.webp') }}" alt="" class="h-44 w-full object-cover">
                 <div class="px-5 py-3">
                     <div class="text-base font-bold text-black">
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div
-                class="col-span-12 md:col-span-6 lg:col-span-4 border-2 rounded-md drop-shadow-md bg-white border-t-blue-600">
+                class="col-span-12 md:col-span-6 lg:col-span-4 border-2 rounded-md drop-shadow-md bg-white border-t-[#ff5700]">
                 <img src="{{ asset('img/bcc-sunset.webp') }}" alt="" class="h-44 w-full object-cover">
                 <div class="px-5 py-3">
                     <div class="text-base font-bold text-black">
