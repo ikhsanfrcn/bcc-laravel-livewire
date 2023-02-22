@@ -69,7 +69,7 @@
                     <input type="number"class="bg-neutral-200 py-3 px-5 w-full rounded-md" name="phone_number"
                         id="" placeholder="Phone Number">
                     <button class="md:col-start-12 bg-[#ff5700] py-3 text-white w-full rounded-md" type="submit">Become a
-                        Subscriber!</button>
+                        Clubbers!</button>
                 </form>
             </div>
             <div class="col-span-6 bg-cover bg-center" style="background-image: url('{{ asset('img/bcc-1.webp') }}')">

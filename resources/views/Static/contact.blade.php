@@ -194,10 +194,9 @@
                     <hr class=" w-full h-0.5 mx-auto bg-neutral-500 border-0 rounded">
                     <h6 class="text-[2vw] md:text-[1vw]">E-mail</h6>
                 </div>
-                <p class="text-[4vw] md:text-[2vw]">admin@balicoffeeclub.com</p>
+                <p class="text-[4vw] md:text-[2vw]">info@balicoffeeclub.com</p>
             </div>
         </section>
-        
     </main> --}}
 
 @endsection

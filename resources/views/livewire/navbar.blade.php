@@ -14,8 +14,8 @@
                 <img src="{{ asset('img/bcc-horizontal-blackfont.webp') }}" class="h-20 ml-4" alt="">
             </a>
         </div>
-        <div class="mt-12 grid grid-cols-8 py-16 drop-shadow-xl">
-            <div class="grid gap-y-5 text-black col-start-2 col-span-3 text-[2vw]">
+        <div class="mt-5 grid grid-cols-8 py-16 drop-shadow-xl">
+            <div class="grid text-black col-start-2 col-span-3 text-[1.5vw] h-[70vh]">
                 <a class="block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
                 <a class="block hover:text-red-400" href="about-us">ABOUT US</a>
                 <a class="block hover:text-red-400 focus-within:text-black" href="/coffee">COFFEE</a>
@@ -32,16 +32,26 @@
             <div class="col-start-6 col-span-2 grid grid-rows-3 gap-y-5">
                 <div class="row-span-2 grid">
                     <h6 class="text-gray-300">Address</h6>
-                    <h4 class="text-[2vw]">Seminyak</h4>
-                    <p class="text-[1vw]">
-                        Gg. Meduri Lingkungan Taman Mertanadi No.5, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung,
-                        Bali
-                        80361
-                    </p>
-                    <h4 class="text-[2vw]">Canggu</h4>
-                    <p class="text-[1vw]">
-                        Jl. Kubu Manyar No.22, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
-                    </p>
+                        <h4 class="text-[2vw]">Bali</h4>
+                            <div class="py-2">
+                                <h6 class="text-[1.3vw]">Seminyak</h6>
+                                <p class="text-[0.9vw]">
+                                    Gg. Meduri Lingkungan Taman Mertanadi No.5, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung,
+                                    Bali
+                                    80361
+                                </p>
+                                <h6 class="pt-2 text-[1.3vw]">Canggu</h6>
+                                <p class="text-[0.9vw]">
+                                    Jl. Kubu Manyar No.22, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
+                                </p>
+                            </div>
+                        <h4 class="text-[2vw]">Jakarta</h4>
+                            <div class="py-2">
+                            <h6 class="text-[1.3vw]">?????</h6>
+                                <p class="text-[0.9vw]">
+                                    Jl. ???????
+                                </p>
+                            </div>
                 </div>
                 <div class="">
                     <h6 class="text-gray-300">Phone</h6>
@@ -50,7 +60,7 @@
                     </p>
                     <h6 class="text-gray-300">Enquiries</h6>
                     <p class="text-[1vw]">
-                        admin@balicoffeeclub.com
+                        info@balicoffeeclub.com
                     </p>
                 </div>
             </div>
@@ -76,7 +86,7 @@
             </a>
         </div>
         <div class="mt-12 grid grid-cols-12 py-10">
-            <div class="col-start-2 col-span-10 grid grid-rows-4 gap-y-8 text-black text-[7vw]">
+            <div class="col-start-2 col-span-10 grid grid-rows-4 gap-y-8 text-black text-[4.5vw]">
                 <a class="block hover:text-red-400 focus-within:text-black" href="/">HOME</a>
                 <a class="block hover:text-red-400" href="/about-us">ABOUT US</a>
                 <a class="block hover:text-red-400 focus-within:text-black" href="/coffee">COFFEE</a>

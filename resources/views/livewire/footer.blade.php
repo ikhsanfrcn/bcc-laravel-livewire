@@ -82,7 +82,9 @@
     </div>
     <!--  -->
     <hr class=" w-full h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700">
-    <p class="text-center py-5 text-[1.2vw]">© 2022 BVR Group Asia, Inc. All rights reserved.</p>
+    <p class="flex py-5 text-[1.2vw] justify-center">Site Developed by <a target="blank"
+                    href="https://bvrdigital.com"><img class="w-24 mx-5"
+                        src="{{ asset('/img/bvrdigital.png') }}" alt="BVR Digital"></a>©2023 All Rights Reserved.</p>
 </footer>
 
 
@@ -173,5 +175,7 @@
     </div>
     <!--  -->
     <hr class=" w-full h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700">
-    <p class="text-center py-5 text-[2vw]">© 2023 BVR Group Asia, Inc. All rights reserved.</p>
+    <p class="flex py-5 text-[3vw] justify-center">Site Developed by <a target="blank"
+                    href="https://bvrdigital.com"><img class="w-16 mx-5"
+                        src="{{ asset('/img/bvrdigital.png') }}" alt="BVR Digital"></a>©2023 All Rights Reserved.</p>
 </footer>

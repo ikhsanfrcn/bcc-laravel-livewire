@@ -14,7 +14,7 @@ url('{{ asset('img/coffee/cover.webp') }}');">
             </div>
         </div>
     </header>
-    <main class="bg-white">
+    <main class="py-12 md:py-32 bg-white shadow-md">
         <section class="grid grid-cols-12">
             <div class="col-span-12 md:col-span-8 lg:col-span-6">
                 <div class="px-5 py-5 md:px-12 md:py-12 lg:py-32">

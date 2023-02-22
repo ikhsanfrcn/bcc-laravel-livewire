@@ -14,7 +14,7 @@ url('{{ asset('img/bakery/bakery-intro.webp') }}');">
     </div>
 </div>
 </header>
-<main class="bg-white">
+<main class="py-12 md:py-32 bg-white shadow-md">
     <section class="grid grid-cols-12">
         <div class="col-span-12 md:col-span-8 lg:col-span-6">
             <div class="px-5 py-5 md:px-12 md:py-12 lg:py-32">
@@ -22,7 +22,7 @@ url('{{ asset('img/bakery/bakery-intro.webp') }}');">
                 <h2 class="text-2xl font-bold tracking-tight">A Healthy Bakery Experience</h2>
                 <p class="leading-relaxed text-neutral-600 text-sm mt-2">
                     <span>
-                        Savor the flavors of the best croissants in Bali only at the Bali Coffee Club. Treat yourself to the freshest ingredients baked with love with the sense of Balinese culture. Our bakery is not just known for its delicious treats, but also as a healthy bakery shop. 
+                        Savor the flavors of the best croissants in Bali only at the Bali Coffee Club. Treat yourself to the freshest ingredients baked with love with the sense of Balinese culture. Our bakery is not just known for its delicious treats, but also as a healthy bakery shop.
                     </span>
                     <br/>
                     <span class="block mt-2">
@@ -60,7 +60,7 @@ url('{{ asset('img/bakery/bakery-intro.webp') }}');">
                 <h2 class="text-2xl font-bold tracking-tight">From Retail to Wholesale</h2>
                 <p class="leading-relaxed text-neutral-600 text-sm mt-2">
                     <span>
-                        We offer a wide range of premium bakery products, from retail to wholesale, to cater to all your needs. Whether you're a coffee connoisseur or a pastry lover, our carefully curated menu of freshly baked items and aromatic coffee won’t disappoint you. 
+                        We offer a wide range of premium bakery products, from retail to wholesale, to cater to all your needs. Whether you're a coffee connoisseur or a pastry lover, our carefully curated menu of freshly baked items and aromatic coffee won’t disappoint you.
                     </span>
                     <br/>
                     <span class="block mt-2">
