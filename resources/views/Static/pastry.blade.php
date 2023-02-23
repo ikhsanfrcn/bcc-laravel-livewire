@@ -10,7 +10,10 @@ linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
 url('{{ asset('img/bakery/bakery-intro.webp') }}');">
 <div class="grid grid-cols-12 w-full">
     <div class="col-span-12">
-        <h1 class="text-white font-extrabold text-5xl md:text-6xl tracking-tight w-full md:w-full lg:w-1/2">Baked with Love: The Best Croissant in Bali</h1>
+        <h1 class="flex items-center text-white font-extrabold text-5xl tracking-tight w-full md:w-full lg:w-1/2">Baked with <a target="blank"
+            href="https://bvrdigital.com"><img class="w-20 mx-2"
+                src="{{ asset('/img/BCC-Heart.png') }}" alt="BVR Digital"></a></h1>
+        <h1 class="text-white font-extrabold text-5xl tracking-tight w-full md:w-full lg:w-1/2">The Best Croissant in Bali</h1>
     </div>
 </div>
 </header>
