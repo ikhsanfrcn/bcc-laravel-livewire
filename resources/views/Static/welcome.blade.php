@@ -1,6 +1,6 @@
 @section('meta_description', 'Bali Cofffee Club meta description home')
 @section('meta_keywords', 'Eatery in Bali, Pastry Shop in Bali, Bali Coffee Club')
-@extends('layout.main')
+@extends('Layout.main')
 @section('page_title', 'Home')
 
 @section('content')

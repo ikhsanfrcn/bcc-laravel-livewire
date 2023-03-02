@@ -24,8 +24,23 @@
 </head>
 
 <body>
+    {{-- <nav class="grid grid-cols-12 px-5 md:px-12 lg:px-20 py-3 bg-white drop-shadow-lg items-center">
+        <div class="col-span-6">
+            <a href="/">
+                <img src="{{asset('img/bcc-horizontal-blackfont.webp')}}" class="w-52" alt="Bali Coffee Club" title="Bali Coffee Club">
+            </a>
+        </div>
+        <div class="col-span-6 space-x-4 w-fit ml-auto">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Coffee</a>
+            <a href="">Pastry</a>
+            <a href="">Eatery</a>
+            <a href="">Coffeepedia</a>
+            <a href="">Contact</a>
+        </div>
+    </nav> --}}
     @yield('content')
-    @livewire('footer')
 </body>
 
 </html>

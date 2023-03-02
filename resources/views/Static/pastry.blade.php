@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('Layout.main')
 @section('page_title', 'Pastry')
 @section('meta_description', 'Savor the flavors of the best croissants in Bali at the Bali Coffee Club.')
 @section('meta_keywords', 'Bali Pastry, Pastry Shop, Best Croissant in Bali')

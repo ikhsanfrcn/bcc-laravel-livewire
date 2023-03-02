@@ -45,6 +45,12 @@ Route::get('/eatery', function () {
 Route::get('/register', function () {
     return view('Auth.register');
 });
+Route::get('/menusunset.php', function () {
+    return view('Menu.menusunset');
+});
+Route::get('/menucanggu.php', function () {
+    return view('Menu.menucanggu');
+});
 
 
 Route::resource('/coffeepedia', PediaController::class);

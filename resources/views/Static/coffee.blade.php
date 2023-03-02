@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('Layout.main')
 @section('page_title', 'Coffee')
 @section('meta_description', 'Bali Cofffee Club meta description about')
 @section('meta_keywords', 'Bali Coffee Club, Coffee Roasted in Bali, Best Arabica Coffee in Bali')

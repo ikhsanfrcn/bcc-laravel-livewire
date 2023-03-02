@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('Layout.main')
 @section('page_title', 'Eatery')
 @section('meta_description', 'Bali Coffee Club offers a chic Bali restaurant located in the heart of Canggu.')
 @section('meta_keywords', 'bali restaurant, bali best food to eat, bali dining restaurant, restaurant in canggu')

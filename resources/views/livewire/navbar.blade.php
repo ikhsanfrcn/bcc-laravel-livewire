@@ -29,41 +29,7 @@
                     <a class="block hover:text-red-400" href="/membership">MEMBERSHIP</a>
                 @endauth
             </div>
-            <div class="col-start-6 col-span-2 grid grid-rows-3 gap-y-5">
-                <div class="row-span-2 grid">
-                    <h6 class="text-gray-300">Address</h6>
-                        <h4 class="text-[2vw]">Bali</h4>
-                            <div class="py-2">
-                                <h6 class="text-[1.3vw]">Seminyak</h6>
-                                <p class="text-[0.9vw]">
-                                    Gg. Meduri Lingkungan Taman Mertanadi No.5, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung,
-                                    Bali
-                                    80361
-                                </p>
-                                <h6 class="pt-2 text-[1.3vw]">Canggu</h6>
-                                <p class="text-[0.9vw]">
-                                    Jl. Kubu Manyar No.22, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
-                                </p>
-                            </div>
-                        <h4 class="text-[2vw]">Jakarta</h4>
-                            <div class="py-2">
-                            <h6 class="text-[1.3vw]">?????</h6>
-                                <p class="text-[0.9vw]">
-                                    Jl. ???????
-                                </p>
-                            </div>
-                </div>
-                <div class="">
-                    <h6 class="text-gray-300">Phone</h6>
-                    <p class="text-[1vw]">
-                        (0361) 9348918
-                    </p>
-                    <h6 class="text-gray-300">Enquiries</h6>
-                    <p class="text-[1vw]">
-                        info@balicoffeeclub.com
-                    </p>
-                </div>
-            </div>
+            
         </div>
     </div>
 

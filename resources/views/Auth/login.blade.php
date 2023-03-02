@@ -1,4 +1,4 @@
-@extends('layout.auth')
+@extends('Layout.auth')
 @section('page_title', 'Login')
 
 @section('page_content')
