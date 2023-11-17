@@ -56,8 +56,7 @@
                     </div>
 
                 @endif
-                <form class="grid grid-cols-2 mt-5 gap-x-5 gap-y-5" action="{{ route('contact.store') }}" method="POST">
-                    @csrf
+                <form class="grid grid-cols-2 mt-5 gap-x-5 gap-y-5">
                     <div class="col-span-1">
                         <input type="text" name="name" placeholder="Your Name"
                             class="px-2 py-2 w-full bg-white drop-shadow-sm" required>

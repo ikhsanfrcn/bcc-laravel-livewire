@@ -11,7 +11,8 @@ use App\Http\Controllers\CoffeeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserSubscriberController;
 use App\Http\Controllers\PediaController;
-
+use App\Http\Controllers\BaristaCompetitionController;
+use App\Http\Controllers\PDFController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/', IndexController::class);
 Route::resource('/coffeepedia', PediaController::class);
+Route::resource('/bcc-pdf', PDFController::class );
+Route::resource('/barista-competition',BaristaCompetitionController::class);
 
 // Static Pages
 Route::get('/about-us', function () {

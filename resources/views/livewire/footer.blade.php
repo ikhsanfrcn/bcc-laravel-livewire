@@ -24,6 +24,7 @@
                 <li><a href="/pastry" class="hover:text-neutral-800">Pastry</a></li>
                 <li><a href="/eatery" class="hover:text-neutral-800">Eatery</a></li>
                 <li><a href="/contact" class="hover:text-neutral-800">Contact</a></li>
+                <li><a href="https://jakarta.balicoffeeclub.com" target="_blank" class="hover:text-neutral-800">Bali Coffee Club Jakarta Website</a></li>
             </ul>
         </div>
         <div>
@@ -33,25 +34,14 @@
                 <li><a href="https://www.facebook.com/bvrbalicoffeeclub" class="hover:text-neutral-800 ">Facebook</a></li>
             </ul>
         </div>
-        <div>
-            <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Subscribe to Our Newsletter</h5>
-            <div class="pt-3 grid grid-rows-2 gap-2 text-[1vw]">
-                <input type="text" placeholder="Name" class="bg-neutral-200 w-full p-[1vw]">
-                <input type="email" name="" id="" placeholder="Enter your email"
-                    class="bg-neutral-200 w-full p-[1vw]">
-                <div class="grid grid-cols-3">
-                    <button class="col-start-3 bg-[#ff5700] p-[1vw] text-white text-[1vw]">Submit</button>
-                </div>
-            </div>
-        </div>
     </div>
     <!--  -->
-    <div class="grid grid-cols-4 container mx-auto">
+    <div class="grid grid-cols-4 container mx-auto mt-10">
         <div class="col-start-2">
             <div class="grid grid-rows-4 gap-1">
                 <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Online Order BCC Sunset</h5>
                 <!-- <img src="{{ asset('img/footer/Gofood-logo.webp') }}" class="w-[10vw] object-cover" alt="Gofood" /> -->
-                <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}"
+                <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/gofood-logo.webp') }}"
                         class="w-[10vw] object-cover" alt="Gofood" /></a>
                 <a href="https://food.grab.com/id/id/restaurant/bali-coffee-club-seminyak-delivery/6-C3AVA2KEE7EGJT"><img
                         src="{{ asset('img/footer/grabfood-logo-2.webp') }}"
@@ -64,7 +54,7 @@
         </div>
         <div class="grid grid-rows-4 gap-1">
             <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Online Order BCC Sunset</h5>
-            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}"
+            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/gofood-logo.webp') }}"
                         class="w-[10vw] object-cover" alt="Gofood" /></a>
         </div>
         <div class="grid grid-rows-6">
@@ -117,6 +107,7 @@
                 <li><a href="about-us" class="hover:text-neutral-200 ">About</a></li>
                 <li><a href="coffeepedia" class="hover:text-neutral-200 ">Coffeepedia</a></li>
                 <li><a href="contact" class="hover:text-neutral-200 ">Contact</a></li>
+                <li><a href="https://jakarta.balicoffeeclub.com" target="_blank" class="hover:text-neutral-200">Bali Coffee Club Jakarta Website</a></li>
             </ul>
         </div>
         <div>
@@ -132,7 +123,7 @@
     <div class="pt-5 grid grid-cols-3 container mx-auto pb-5 px-[2vw]">
         <div class="grid grid-rows-4 gap-1">
             <h5 class="font-semibold text-neutral-600 text-[2vw]">Online Order BCC Sunset</h5>
-            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}"
+            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/gofood-logo.webp') }}"
                     class="w-[20vw] object-cover" alt="Gofood" /></a>
             <a href="https://food.grab.com/id/id/restaurant/bali-coffee-club-seminyak-delivery/6-C3AVA2KEE7EGJT"><img
                     src="{{ asset('img/footer/grabfood-logo-2.webp') }}"
@@ -144,7 +135,7 @@
         </div>
         <div class="grid grid-rows-4 gap-1">
             <h5 class="font-semibold text-neutral-600 text-[2vw]">Online Order BCC Sunset</h5>
-            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/Gofood-logo.webp') }}" class="w-[20vw] object-cover" alt="Gofood" />
+            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/gofood-logo.webp') }}" class="w-[20vw] object-cover" alt="Gofood" />
         </div>
         <!--  -->
         <div class="">

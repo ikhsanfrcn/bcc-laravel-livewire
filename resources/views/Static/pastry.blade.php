@@ -7,7 +7,7 @@
 <header
 class="flex items-center justify-center bg-no-repeat bg-cover bg-center h-[85vh] md:h-[40vh] lg:h-[75vh] px-5 md:px-14 lg:px-20"style="background-image:
 linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
-url('{{ asset('img/bakery/bakery-intro.webp') }}');">
+url('{{ asset('img/bakery/new-image-2.jpg') }}');">
 <div class="grid grid-cols-12 w-full">
     <div class="col-span-12">
         <h1 class="flex items-center text-white font-extrabold text-5xl tracking-tight w-full md:w-full lg:w-1/2">Baked with <a target="blank"
@@ -34,7 +34,7 @@ url('{{ asset('img/bakery/bakery-intro.webp') }}');">
                 </p>
             </div>
         </div>
-        <div class="h-56 md:h-auto col-span-12 md:col-span-4 lg:col-span-6 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('img/bakery/almond-croissant.webp') }}')">
+        <div class="h-56 md:h-auto col-span-12 md:col-span-4 lg:col-span-6 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('img/bakery/new-image-1.jpg') }}')">
         </div>
     </section>
     <section class="grid grid-cols-12">
@@ -53,7 +53,7 @@ url('{{ asset('img/bakery/bakery-intro.webp') }}');">
                 </p>
             </div>
         </div>
-        <div class="h-56 md:h-auto order-last md:order-first col-span-12 md:col-span-4 lg:col-span-6 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('img/bakery/pain-au-chocolat.webp') }}')">
+        <div class="h-56 md:h-auto order-last md:order-first col-span-12 md:col-span-4 lg:col-span-6 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('img/bakery/new-image-3.jpg') }}')">
         </div>
     </section>
     <section class="grid grid-cols-12">
@@ -72,7 +72,7 @@ url('{{ asset('img/bakery/bakery-intro.webp') }}');">
                 </p>
             </div>
         </div>
-        <div class="h-56 md:h-auto col-span-12 md:col-span-4 lg:col-span-6 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('img/bakery/raisin-danish.webp') }}')">
+        <div class="h-56 md:h-auto col-span-12 md:col-span-4 lg:col-span-6 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('img/bakery/new-image-4.jpg') }}')">
         </div>
     </section>
 </main>
