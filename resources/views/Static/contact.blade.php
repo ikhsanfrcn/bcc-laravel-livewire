@@ -102,7 +102,7 @@
                     </div>
                     <div class="text-sm font-semibold text-neutral-600 mt-2">
                         Phone Number
-                        <span class="block text-sm text-neutral-400">+0361 9348918</span>
+                        <span class="block text-sm text-neutral-400">+62 878-1822-3076</span>
                     </div>
                     <div class="text-sm font-semibold text-neutral-600 mt-2">
                         Google Maps
@@ -125,11 +125,33 @@
                     </div>
                     <div class="text-sm font-semibold text-neutral-600 mt-2">
                         Phone Number
-                        <span class="block text-sm text-neutral-400">+0361 9348918</span>
+                        <span class="block text-sm text-neutral-400">+62 878-1822-3076</span>
                     </div>
                     <div class="text-sm font-semibold text-neutral-600 mt-2">
                         Google Maps
                         <a href="https://goo.gl/maps/5WMJ5f8df5Q5KE1B8" target="_blank"
+                            class="block text-sm text-neutral-400">Click Here</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="col-span-12 md:col-span-6 lg:col-span-4 border-2 rounded-md drop-shadow-md bg-white border-t-[#ff5700]">
+                <img src="{{ asset('img/contact/jkt-render.jpg') }}" alt="" class="h-44 w-full object-cover">
+                <div class="px-5 py-3">
+                    <div class="text-base font-bold text-black">
+                        BCC Jakarta
+                    </div>
+                    <div class="text-sm font-semibold text-neutral-600 mt-2">
+                        Address
+                        <span class="block text-sm text-neutral-400">Jl. Lebak Bulus I No.2, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430</span>
+                    </div>
+                    <div class="text-sm font-semibold text-neutral-600 mt-2">
+                        Phone Number
+                        <span class="block text-sm text-neutral-400">+62 888-0952-9395</span>
+                    </div>
+                    <div class="text-sm font-semibold text-neutral-600 mt-2">
+                        Google Maps
+                        <a href="https://maps.app.goo.gl/vg48PFFtTCTNMDg87?g_st=ic" target="_blank"
                             class="block text-sm text-neutral-400">Click Here</a>
                     </div>
                 </div>

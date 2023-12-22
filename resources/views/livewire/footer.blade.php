@@ -1,172 +1,146 @@
-<!-- DESKTOP -->
-<footer class="hidden -z-10 pt-[1.2vw] fixed bottom-0 w-screen bg-white lg:block">
-    <div class="grid grid-cols-6 container mx-[2vw]">
-        <!-- <div class="grid col-span-2 h-20">
-            <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-20 ml-2" alt="">
-            </a>
-        </div> -->
-    </div>
-    <!--  -->
-    <div class="pt-[2vw] grid grid-cols-5 gap-x-[1vw] container mx-auto px-[2vw]">
-        <div class="col-span-2">
-            <h5 class="font-semibold text-neutral-600 text-[1.2vw]">About Bali Coffe Club</h5>
-            <p class="py-2 text-[1vw] font-light w-full md:w-3/4 text-justify">We prize quality above all else. The
-                coffee plant is an incredible asset to our world, and the conditions for growing coffee are unique and special. We are dedicated to being good stewards of
-                these gifts by seeing to it that quality is delivered in every cup of BCC coffee.</p>
-            <a href="/about-us" class="text-[0.8vw] font-semibold text-neutral-600">Learn More</a>
+<footer class="py-14 md:py-26 w-full">
+    <div
+        class="max-w-full md:max-w-2xl lg:max-w-7xl mx-auto px-4 md:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-y-16">
+        <div class="space-y-2 ">
+            <div class="font-medium">
+                About Bali Coffee Club
+            </div>
+            <div class="font-light text-neutral-600">
+                We prize quality above all else. The coffee plant is an incredible asset to our world, and the
+                conditions for growing coffee are unique and
+                special. We are dedicated to being good stewards of these gifts by seeing to it that quality is
+                delivered in every cup of BCC coffee.
+            </div>
         </div>
-        <div class="col-start-3">
-            <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Useful Links</h5>
-            <ul class="pt-3 space-y-1 text-neutral-400 text-[1vw]">
-                <li><a href="/about-us" class="hover:text-neutral-800">About</a></li>
-                <li><a href="/coffee" class="hover:text-neutral-800">Coffee</a></li>
-                <li><a href="/pastry" class="hover:text-neutral-800">Pastry</a></li>
-                <li><a href="/eatery" class="hover:text-neutral-800">Eatery</a></li>
-                <li><a href="/contact" class="hover:text-neutral-800">Contact</a></li>
-                <li><a href="https://jakarta.balicoffeeclub.com" target="_blank" class="hover:text-neutral-800">Bali Coffee Club Jakarta Website</a></li>
-            </ul>
+        <div class="space-y-2">
+            <div class="font-medium">
+                Useful Links
+            </div>
+            <div class="font-light text-neutral-600">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/">
+                            Homepage
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about-us">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/coffee">
+                            Coffee
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pastry">
+                            Pastry
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/eatery">
+                            Eatery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jakarta.balicoffeeclub.com" target="_blank">
+                            Visit Bali Coffee Club Jakarta Website
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Connect with Us</h5>
-            <ul class="pt-3 space-y-1 text-neutral-400 text-[1vw]">
-                <li><a href="https://www.instagram.com/balicoffeeclub/" class="hover:text-neutral-800 ">Instagram</a></li>
-                <li><a href="https://www.facebook.com/bvrbalicoffeeclub" class="hover:text-neutral-800 ">Facebook</a></li>
-            </ul>
+        <div class="space-y-2">
+            <div class="font-medium">
+                Connect with Us
+            </div>
+            <div class="font-light text-neutral-600">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="https://www.instagram.com/balicoffeeclub/">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/bvrbalicoffeeclub">
+                            Facebook
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!--  -->
-    <div class="grid grid-cols-4 container mx-auto mt-10">
-        <div class="col-start-2">
-            <div class="grid grid-rows-4 gap-1">
-                <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Online Order BCC Sunset</h5>
-                <!-- <img src="{{ asset('img/footer/Gofood-logo.webp') }}" class="w-[10vw] object-cover" alt="Gofood" /> -->
+        <div class="space-y-2">
+            <div class="font-medium">
+                Online Order for Bali Coffee Club Canggu
+            </div>
+            <div class="grid gap-4">
+                <a
+                    href="https://gofood.co.id/bali/restaurant/bali-coffee-club-canggu-kubu-manyar-8caac421-737d-4c3e-99e5-8509f989d070"><img
+                        src="{{ asset('img/footer/gofood-logo.webp') }}" class="w-32 md:w-44 object-cover"
+                        alt="Gofood for Bali Coffee Club Canggu" /></a>
+                <a href="https://r.grab.com/g/2-1-6-C3BEVAXXGYMBLN"><img
+                        src="{{ asset('img/footer/grabfood-logo-2.webp') }}" class="w-32 md:w-44 object-cover"
+                        alt="Grabfood for Bali Coffee Club Seminyak" /></a>
+            </div>
+        </div>
+        <div class="space-y-2">
+            <div class="font-medium">
+                Online Order for Bali Coffee Club Seminyak
+            </div>
+            <div class="grid gap-4">
                 <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/gofood-logo.webp') }}"
-                        class="w-[10vw] object-cover" alt="Gofood" /></a>
+                        class="w-32 md:w-44 object-cover" alt="Gofood for Bali Coffee Club Seminyak" /></a>
                 <a href="https://food.grab.com/id/id/restaurant/bali-coffee-club-seminyak-delivery/6-C3AVA2KEE7EGJT"><img
-                        src="{{ asset('img/footer/grabfood-logo-2.webp') }}"
-                        class="w-[10vw] ml-[0.7vw] mt-[0.7vw] object-cover" alt="Grabfood" /></a>
+                        src="{{ asset('img/footer/grabfood-logo-2.webp') }}" class="w-32 md:w-44 object-cover"
+                        alt="Grabfood for Bali Coffee Club Seminyak" /></a>
                 <a
                     href="https://shopee.co.id/universal-link/now-food/shop/20264588?deep_and_deferred=1&shareChannel=copy_link"><img
-                        src="{{ asset('img/footer/shopee-food-2.webp') }}" class="w-[10vw] ml-[0.4vw] object-cover"
-                        alt="Shopeefood" /></a>
+                        src="{{ asset('img/footer/shopee-food-2.webp') }}" class="w-32 md:w-44 object-cover"
+                        alt="Shopee Food for Bali Coffee Club Seminyak" /></a>
             </div>
         </div>
-        <div class="grid grid-rows-4 gap-1">
-            <h5 class="font-semibold text-neutral-600 text-[1.2vw]">Online Order BCC Sunset</h5>
-            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/gofood-logo.webp') }}"
-                        class="w-[10vw] object-cover" alt="Gofood" /></a>
-        </div>
-        <div class="grid grid-rows-6">
-            <div class="row-start-5 grid grid-cols-8 place-items-center">
+        <div class="grid grid-cols-7 items-center h-full content-end">
+            <div>
                 <img src="{{ asset('img/footer/bank-mandiri-logo-white-bg-1.webp') }}"
                     class="w-[10vw] object-cover col-span-2" alt="Mandiri" />
+            </div>
+            <div>
                 <img src="{{ asset('img/footer/2-100x100.webp') }}" class="w-[10vw] object-cover" alt="Shopee" />
+            </div>
+            <div>
                 <img src="{{ asset('img/footer/3-100x100.webp') }}" class="w-[10vw] object-cover" alt="OVO" />
+            </div>
+            <div>
                 <img src="{{ asset('img/footer/4-100x100.webp') }}" class="w-[10vw] object-cover" alt="LinkAja" />
+            </div>
+            <div>
                 <img src="{{ asset('img/footer/5-100x100.webp') }}" class="w-[10vw] object-cover" alt="QRIS" />
+            </div>
+            <div>
                 <img src="{{ asset('img/footer/6-100x100.webp') }}" class="w-[10vw] object-cover" alt="VISA" />
+            </div>
+            <div>
                 <img src="{{ asset('img/footer/7-100x100.webp') }}" class="w-[10vw] object-cover" alt="Mastercard" />
             </div>
         </div>
-    </div>
-    <!--  -->
-    <hr class=" w-full h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700">
-    <p class="flex py-5 text-[1.2vw] justify-center">Site Developed by <a target="blank"
-                    href="https://bvrdigital.com"><img class="w-24 mx-5"
-                        src="{{ asset('/img/bvrdigital.png') }}" alt="BVR Digital"></a>©2023 All Rights Reserved.</p>
-</footer>
-
-
-
-<!-- MOBILE -->
-<footer class="block -z-10 pt-12 fixed bottom-0 w-full bg-white lg:hidden">
-    <div class="grid grid-cols-12 container">
-        <div class="grid col-span-7 col-start-2 grid-rows-2">
-            <a href="/">
-                <img src="{{asset ('img/bcc-horizontal-blackfont.webp')}}" class="h-10" alt="BCC">
-            </a>
-        </div>
-    </div>
-    <!--  -->
-    <div class="grid grid-cols-4 gap-x-[4vw] container mx-auto px-[2vw]">
-        <div class="col-span-2">
-            <h5 class="font-semibold text-neutral-600 text-[2vw]">About Bali Coffe Club</h5>
-            <p class="text-[1.5vw] font-light text-justify">We prize quality above all else. The coffee plant is an
-                incredible
-                asset to our
-                world, and the
-                conditions for growing coffee are unique and special. We are dedicated to being good stewards of
-                these gifts by seeing to it that quality is delivered in every cup of BCC coffee.</p>
-            <a href="" class="text-[1.5vw] font-semibold text-neutral-600">Learn More</a>
-        </div>
-        <div class="">
-            <h5 class="font-semibold text-neutral-600 text-[2vw]">Usefull Links</h5>
-            <ul class="pt-3 space-y-1 text-neutral-400 text-[1.5vw]">
-                <!-- <li><a href="#" class="hover:text-neutral-200 ">Shop</a></li> -->
-                <li><a href="about-us" class="hover:text-neutral-200 ">About</a></li>
-                <li><a href="coffeepedia" class="hover:text-neutral-200 ">Coffeepedia</a></li>
-                <li><a href="contact" class="hover:text-neutral-200 ">Contact</a></li>
-                <li><a href="https://jakarta.balicoffeeclub.com" target="_blank" class="hover:text-neutral-200">Bali Coffee Club Jakarta Website</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5 class="font-semibold text-neutral-600 text-[2vw]">Connect with Us</h5>
-            <ul class="pt-3 space-y-1 text-neutral-400 text-[1.5vw]">
-                <li><a href="#" class="hover:text-neutral-200 ">Facebook</a></li>
-                <li><a href="#" class="hover:text-neutral-200 ">Instagram</a></li>
-                <li><a href="#" class="hover:text-neutral-200 ">Tiktok</a></li>
-                <!-- <li><a href="#" class="hover:text-neutral-200 ">LINK</a></li> -->
-            </ul>
-        </div>
-    </div>
-    <div class="pt-5 grid grid-cols-3 container mx-auto pb-5 px-[2vw]">
-        <div class="grid grid-rows-4 gap-1">
-            <h5 class="font-semibold text-neutral-600 text-[2vw]">Online Order BCC Sunset</h5>
-            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/gofood-logo.webp') }}"
-                    class="w-[20vw] object-cover" alt="Gofood" /></a>
-            <a href="https://food.grab.com/id/id/restaurant/bali-coffee-club-seminyak-delivery/6-C3AVA2KEE7EGJT"><img
-                    src="{{ asset('img/footer/grabfood-logo-2.webp') }}"
-                    class="w-[20vw] ml-[1.5vw] mt-[0.7vw] object-cover" alt="Grabfood" /></a>
-            <a
-                href="https://shopee.co.id/universal-link/now-food/shop/20264588?deep_and_deferred=1&shareChannel=copy_link"><img
-                    src="{{ asset('img/footer/shopee-food-2.webp') }}" class="w-[20vw] ml-[1vw] object-cover"
-                    alt="Shopeefood" /></a>
-        </div>
-        <div class="grid grid-rows-4 gap-1">
-            <h5 class="font-semibold text-neutral-600 text-[2vw]">Online Order BCC Sunset</h5>
-            <a href="https://gofood.link/a/Cn8NZoG"><img src="{{ asset('img/footer/gofood-logo.webp') }}" class="w-[20vw] object-cover" alt="Gofood" />
-        </div>
-        <!--  -->
-        <div class="">
-            <h5 class="font-semibold text-neutral-600 text-[2vw]">Subscribe to Our Newsletter</h5>
-            <div class="pt-3 grid grid-rows-2 gap-2 text-[1.5vw]">
-                <input type="text" placeholder="Name" class="bg-neutral-200 w-full p-[1.5vw]">
-                <input type="email" name="" id="" placeholder="Enter your email"
-                    class="bg-neutral-200 w-full p-[1.5vw]">
-                <div class="grid grid-cols-3">
-                    <button class="col-start-3 bg-[#ff5700] p-[1.5vw] text-white text-[1.5vw]">Submit</button>
-                </div>
+        <div class="flex items-center justify-center col-span-3 text-xs">
+            <div>
+                Site Developed by
+            </div>
+            <div>
+                <a target="blank"
+                href="https://bvrdigital.com"><img class="w-20 mx-5"
+                    src="{{ asset('/img/bvrdigital.png') }}" alt="BVR Digital"></a>
+            </div>
+            <div>
+                ©2023 All Rights Reserved.
             </div>
         </div>
-        <div class="col-start-2 col-span-2">
-            <div class="pt-6 grid grid-cols-8 place-items-center">
-                <img src="{{ asset('img/footer/bank-mandiri-logo-white-bg-1.webp') }}"
-                    class="w-[10vw] object-cover col-span-2" alt="Mandiri" />
-                <img src="{{ asset('img/footer/2-100x100.webp') }}" class="w-[10vw] object-cover" alt="Shopee" />
-                <img src="{{ asset('img/footer/3-100x100.webp') }}" class="w-[10vw] object-cover" alt="OVO" />
-                <img src="{{ asset('img/footer/4-100x100.webp') }}" class="w-[10vw] object-cover" alt="LinkAja" />
-                <img src="{{ asset('img/footer/5-100x100.webp') }}" class="w-[10vw] object-cover" alt="QRIS" />
-                <img src="{{ asset('img/footer/6-100x100.webp') }}" class="w-[10vw] object-cover" alt="VISA" />
-                <img src="{{ asset('img/footer/7-100x100.webp') }}" class="w-[10vw] object-cover" alt="Mastercard" />
-            </div>
-        </div>
-        <!--  -->
-
     </div>
-    <!--  -->
-    <hr class=" w-full h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700">
-    <p class="flex py-5 text-[3vw] justify-center">Site Developed by <a target="blank"
-                    href="https://bvrdigital.com"><img class="w-16 mx-5"
-                        src="{{ asset('/img/bvrdigital.png') }}" alt="BVR Digital"></a>©2023 All Rights Reserved.</p>
 </footer>

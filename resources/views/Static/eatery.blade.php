@@ -6,7 +6,7 @@
 @section('content')
     <header
         class="flex items-center justify-center bg-no-repeat bg-cover bg-center h-[85vh] md:h-[40vh] lg:h-[75vh] px-5 md:px-14 lg:px-20"style="background-image:
-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
 url('{{ asset('img/eatery/cover.webp') }}');">
         <div class="grid grid-cols-12 w-full">
             <div class="col-span-12">
@@ -32,7 +32,7 @@ url('{{ asset('img/eatery/cover.webp') }}');">
                 </div>
             </div>
             <div class="h-56 md:h-auto col-span-12 md:col-span-4 lg:col-span-6 bg-cover bg-center bg-no-repeat"
-                style="background-image: url('{{ asset('img/eatery/1.webp') }}')">
+                style="background-image: url('{{ asset('img/eatery/update-1.jpg') }}')">
             </div>
         </section>
         <section class="grid grid-cols-12">
@@ -84,7 +84,7 @@ url('{{ asset('img/eatery/cover.webp') }}');">
                 </div>
             </div>
             <div class="h-56 md:h-auto col-span-12 md:col-span-4 lg:col-span-6 bg-cover bg-center bg-no-repeat"
-                style="background-image: url('{{ asset('img/eatery/3.webp') }}')">
+                style="background-image: url('{{ asset('img/eatery/update-2.jpg') }}')">
             </div>
         </section>
     </main>

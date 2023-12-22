@@ -6,7 +6,7 @@
 @section('content')
     <header
         class="flex items-center justify-center bg-no-repeat bg-cover bg-center h-[85vh] md:h-[40vh] lg:h-[75vh] px-5 md:px-14 lg:px-20"style="background-image:
-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
 url('{{ asset('img/coffee/cover.webp') }}');">
         <div class="grid grid-cols-12 w-full">
             <div class="col-span-12">

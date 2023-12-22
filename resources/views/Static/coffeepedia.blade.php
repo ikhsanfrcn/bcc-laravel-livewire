@@ -26,7 +26,10 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="border">
-                    <iframe class="w-full h-52 lg:h-56" src="https://www.youtube.com/embed/FBQ6YiLKIZM?si=PaSjkrC1EOZTJN3L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="w-full h-52 lg:h-56" src="https://www.youtube.com/embed/FBQ6YiLKIZM?si=PaSjkrC1EOZTJN3L"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                     <div class="p-4 space-y-2">
                         <div class="">
                             #WeKnowCoffee - Episode 1
@@ -37,7 +40,10 @@
                     </div>
                 </div>
                 <div class="border">
-                    <iframe class="w-full h-52 lg:h-56" src="https://www.youtube.com/embed/GHmDWrYanBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="w-full h-52 lg:h-56" src="https://www.youtube.com/embed/GHmDWrYanBw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                     <div class="p-4 space-y-2">
                         <div class="">
                             #WeKnowCoffee - Episode 2
@@ -48,7 +54,10 @@
                     </div>
                 </div>
                 <div class="border">
-                    <iframe class="w-full h-52 lg:h-56" src="https://www.youtube.com/embed/QsYeBsDbC-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="w-full h-52 lg:h-56" src="https://www.youtube.com/embed/QsYeBsDbC-c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                     <div class="p-4 space-y-2">
                         <div class="">
                             #WeKnowCoffee - Episode 3
@@ -60,13 +69,11 @@
                 </div>
             </div>
         </section>
-        
-        <section class="py-16 md:py-24 max-w-full md:max-w-2xl lg:max-w-7xl mx-auto shadow-lg shadow-black" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-position:center; background-size:cover;">
+
+        <section class="py-16 md:py-16 max-w-full md:max-w-2xl lg:max-w-7xl mx-auto">
             <div class="w-full space-y-4">
-                <div class="text-center text-white max-w-lg mx-auto font-bold text-2xl">
-                    Stay Caffeinated with Us! <br/>Subscribe to Our YouTube Channel Now!
-                </div>
-                <a class="text-white text-center w-fit mx-auto block p-2.5 border" href="https://www.youtube.com/@bvrgroupasia">Susbcribe to Our Youtube Channel</a>
+                <a class="text-white bg-[#ff5700] text-center w-fit mx-auto block p-2.5 border"
+                    href="https://www.youtube.com/@bvrgroupasia">Susbcribe to Our Youtube Channel</a>
             </div>
         </section>
 
